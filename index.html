@@ -13,58 +13,60 @@
   <body>
     <div class="bg-[url('/public/assets/images/background.png')] h-96">
       <div
-        class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-24 md:pr-32 pt-16 px-4"
+        class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-16 md:pr-16 xl:pl-24 xl:pr-32 md:pt-16 sm:pt-12 sm:px-4 pt-12 px-4"
       >
-        <div class="md:text-left text-center md:mx-0 mx-auto">
+        <div
+          class="lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
+        >
           <p
-            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-xl"
+            class="font-poppins md:font-semibold sm:font-medium font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base"
           >
             HALAL BIHALAL
           </p>
           <h2
-            class="md:text-8xl text-5xl text-darkBlue font-croissantOne mt-3.5 mb-4"
+            class="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-darkBlue font-croissantOne md:mt-3.5 md:mb-4 my-2.5"
           >
             Jalan Jalin
           </h2>
-          <h4 class="font-croissantOne text-darkBlue md:text-3xl text-xl">
+          <h4 class="font-croissantOne text-darkBlue md:text-3xl sm:text-xl text-xl">
             Keluarga Besar Abdullah Salam
           </h4>
           <p
-            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-xl md:mt-4 mt-3"
+            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base md:mt-4 mt-3"
           >
             JALAN-JALAN MENJALIN SILATURAHMI
           </p>
         </div>
-        <div class="mx-auto md:mx-0 my-7 md:my-auto">
+        <div class="mx-auto md:mx-0 my-5 md:my-auto">
           <div
             class="border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
           >
             <div class="grid grid-cols-2 divide-x mb-3 divide-vintage">
               <div class="text-center md:pr-10 pr-5">
-                <p class="font-poppins font-semibold md:text-2xl text-large">
+                <p class="font-poppins font-semibold md:text-2xl sm:text-large text-large">
                   11 APR
                 </p>
-                <p class="font-poppins font-normal md:text-xl text-md">
+                <p class="font-poppins font-normal md:text-xl sm:text-md text-md">
                   14.00 WIB
                 </p>
               </div>
               <div class="text-center md:pl-10 pl-5">
-                <p class="font-poppins font-semibold md:text-2xl text-large">
+                <p class="font-poppins font-semibold md:text-2xl sm:text-large text-large">
                   12 APR
                 </p>
-                <p class="font-poppins font-normal md:text-xl text-md">
+                <p class="font-poppins font-normal md:text-xl sm:text-md text-md">
                   12.00 WIB
                 </p>
               </div>
             </div>
             <h4
-              class="font-poppins font-semibold md:text-3xl text-xl text-center"
+              class="font-poppins font-semibold md:text-3xl sm:text-xl text-xl text-center"
             >
               2024
             </h4>
           </div>
           <button
-            class="flex bg-mediumBlue rounded-md shadow font-poppins text-white font-normal md:text-large text-sm mx-auto px-5 py-2.5"
+            class="flex bg-mediumBlue rounded-md shadow font-poppins text-white font-normal md:text-large sm:text-sm text-sm mx-auto px-5 py-2.5"
           >
             Buka Undangan
           </button>
@@ -73,15 +75,21 @@
       <img
         id="responsive-image"
         src="public/assets/images/mosque-illustration-large.png"
-        class="absolute bottom-0 object-cover w-full object-top md:h-fit h-96 justify-center"
+        class="absolute bottom-0 object-cover w-full object-top md:h-96 sm:h-72 h-72 xl:h-fit lg:h-fit justify-center"
         alt=""
       />
     </div>
   </body>
   <script>
+    const image = document.getElementById("responsive-image");
+      if (window.innerWidth <= 912) {
+        image.src = "public/assets/images/mosque-illustration-small.png";
+      } else {
+        image.src = "public/assets/images/mosque-illustration-large.png";
+      }
     window.addEventListener("resize", function () {
-      const image = document.getElementById("responsive-image");
-      if (window.innerWidth <= 640) {
+      console.log(window.innerWidth);
+      if (window.innerWidth <= 912) {
         image.src = "public/assets/images/mosque-illustration-small.png";
       } else {
         image.src = "public/assets/images/mosque-illustration-large.png";
