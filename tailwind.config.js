@@ -18,7 +18,7 @@ module.exports = {
         softBlue: "#687C9F",
       },
       backgroundImage: {
-        diamond: "url('/public/assets/images/background.png')",
+        diamond: "url('/public/assets/images/background-diamond.png')",
       },
     },
   },
