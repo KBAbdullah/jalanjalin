@@ -17,6 +17,9 @@ module.exports = {
         babyBlue: "#455D83",
         softBlue: "#687C9F",
       },
+      backgroundImage: {
+        diamond: "url('/public/assets/images/background.png')",
+      },
     },
   },
   plugins: [],
