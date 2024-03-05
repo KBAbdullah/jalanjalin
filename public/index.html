@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jalin</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-[url('../assets/images/background.png')] h-96">
+      <div
+        class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-24 md:pr-32 pt-16 px-4"
+      >
+        <div class="md:text-left text-center md:mx-0 mx-auto">
+          <p
+            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-xl"
+          >
+            HALAL BIHALAL
+          </p>
+          <h2
+            class="md:text-8xl text-5xl text-darkBlue font-croissantOne mt-3.5 mb-4"
+          >
+            Jalan Jalin
+          </h2>
+          <h4 class="font-croissantOne text-darkBlue md:text-3xl text-xl">
+            Keluarga Besar Abdullah Salam
+          </h4>
+          <p
+            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-xl md:mt-4 mt-3"
+          >
+            JALAN-JALAN MENJALIN SILATURAHMI
+          </p>
+        </div>
+        <div class="mx-auto md:mx-0 my-7 md:my-auto">
+          <div
+            class="border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
+          >
+            <div class="grid grid-cols-2 divide-x mb-3 divide-vintage">
+              <div class="text-center md:pr-10 pr-5">
+                <p class="font-poppins font-semibold md:text-2xl text-large">
+                  11 APR
+                </p>
+                <p class="font-poppins font-normal md:text-xl text-md">
+                  14.00 WIB
+                </p>
+              </div>
+              <div class="text-center md:pl-10 pl-5">
+                <p class="font-poppins font-semibold md:text-2xl text-large">
+                  12 APR
+                </p>
+                <p class="font-poppins font-normal md:text-xl text-md">
+                  12.00 WIB
+                </p>
+              </div>
+            </div>
+            <h4
+              class="font-poppins font-semibold md:text-3xl text-xl text-center"
+            >
+              2024
+            </h4>
+          </div>
+          <button
+            class="flex bg-mediumBlue rounded-md shadow font-poppins text-white font-normal md:text-large text-sm mx-auto px-5 py-2.5"
+          >
+            Buka Undangan
+          </button>
+        </div>
+      </div>
+      <img
+        id="responsive-image"
+        src="assets/images/mosque-illustration-large.png"
+        class="absolute bottom-0 object-cover w-full object-top md:h-fit h-96 justify-center"
+        alt=""
+      />
+    </div>
+  </body>
+  <script>
+    window.addEventListener("resize", function () {
+      const image = document.getElementById("responsive-image");
+      if (window.innerWidth <= 640) {
+        image.src = "assets/images/mosque-illustration-small.png";
+      } else {
+        image.src = "assets/images/mosque-illustration-large.png";
+      }
+    });
+  </script>
+</html>
