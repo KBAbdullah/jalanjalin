@@ -14,12 +14,13 @@ module.exports = {
         vintage: "#9A8354",
         darkBlue: "#08182F",
         mediumBlue: "#15253F",
+        greyishBlue: "#2C3D5B",
         babyBlue: "#455D83",
         softBlue: "#687C9F",
       },
-      backgroundImage: {
-        diamond: "url('/public/assets/images/background-diamond.png')",
-      },
+      // backgroundImage: {
+      //   diamond: "url('/public/assets/images/background-diamond.png')",
+      // },
     },
   },
   plugins: [],
