@@ -111,6 +111,10 @@
     const image = document.getElementById("responsive-image");
     if (window.innerWidth <= 912) {
       image.src = "public/assets/images/mosque-illustration-small.png";
+      if (window.innerHeight <= 700) {
+        image.classList.remove('h-64');
+        image.classList.add('h-48');
+      }
     } else {
       image.src = "public/assets/images/mosque-illustration-large.png";
     }

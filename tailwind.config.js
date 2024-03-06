@@ -21,6 +21,18 @@ module.exports = {
       // backgroundImage: {
       //   diamond: "url('/public/assets/images/background-diamond.png')",
       // },
+      textUnderlineOffset: {
+        12: "12px",
+        16: "16px",
+      },
+      borderWidth: {
+        0.5: "0.5px",
+        1: "1px",
+        3.5: "3.5px",
+      },
+      height: {
+        144: "36rem",
+      },
     },
   },
   plugins: [],
