@@ -32,9 +32,18 @@ module.exports = {
         3.5: "3.5px",
       },
       height: {
+        112: "28rem",
+        128: "32rem",
         144: "36rem",
+        168: "42rem",
       },
     },
   },
-  plugins: [addDynamicIconSelectors()],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    addDynamicIconSelectors(),
+    require("@tailwindcss/aspect-ratio")
+  ],
 };
