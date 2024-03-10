@@ -2,7 +2,7 @@
 const { addDynamicIconSelectors } = require("@iconify/tailwind");
 module.exports = {
   // content: ["./public/**/*.{html,js}"],
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
       croissantOne: ['"Croissant One"', "serif"],
@@ -37,6 +37,9 @@ module.exports = {
         144: "36rem",
         168: "42rem",
       },
+      animationDuration: {
+        "2s": "2s",
+      },
     },
   },
   corePlugins: {
@@ -44,6 +47,8 @@ module.exports = {
   },
   plugins: [
     addDynamicIconSelectors(),
-    require("@tailwindcss/aspect-ratio")
+    require("@tailwindcss/aspect-ratio"),
+    require("flowbite/plugin"),
+    require("tailwindcss-animate"),
   ],
 };

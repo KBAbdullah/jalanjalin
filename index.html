@@ -18,7 +18,7 @@
         class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-16 md:pr-16 xl:pl-24 xl:pr-32 md:pt-16 sm:pt-12 sm:px-4 pt-12 px-4"
       >
         <div
-          class="lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
+          class="animate-in md:slide-in-from-left slide-in-from-top duration-2s lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
         >
           <p
             class="font-poppins md:font-semibold sm:font-medium font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base"
@@ -48,7 +48,7 @@
         </div>
         <div class="mx-auto md:mx-0 my-5 md:my-auto">
           <div
-            class="border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
+            class="animate-in md:slide-in-from-top slide-in-from-bottom duration-2s border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
           >
             <div class="grid grid-cols-2 divide-x mb-3 divide-vintage">
               <div class="text-center md:pr-10 pr-5">
@@ -88,7 +88,7 @@
             alt=""
           /> -->
           <button
-            class="flex bg-mediumBlue rounded-md shadow font-poppins text-white font-normal md:text-large sm:text-sm text-sm mx-auto px-5 py-2.5 hover:bg-greyishBlue"
+            class="animate-bounce ease-in flex bg-mediumBlue rounded-md shadow font-poppins text-white font-normal md:text-large sm:text-sm text-sm mx-auto px-5 py-2.5 hover:bg-greyishBlue"
           >
             <a href="public/home.html">Buka Undangan</a>
           </button>
@@ -102,7 +102,7 @@
       <img
         id="responsive-image"
         src="public/assets/images/mosque-illustration-large.png"
-        class="absolute bottom-0 object-cover w-full object-top md:h-96 sm:h-64 h-64 xl:h-fit lg:h-fit justify-center"
+        class="animate-in slide-in-from-bottom duration-2s absolute bottom-0 object-cover w-full object-top md:h-96 sm:h-64 h-64 xl:h-fit lg:h-fit justify-center"
         alt=""
       />
     </div>
@@ -112,8 +112,8 @@
     if (window.innerWidth <= 912) {
       image.src = "public/assets/images/mosque-illustration-small.png";
       if (window.innerHeight <= 700) {
-        image.classList.remove('h-64');
-        image.classList.add('h-48');
+        image.classList.remove("h-64");
+        image.classList.add("h-48");
       }
     } else {
       image.src = "public/assets/images/mosque-illustration-large.png";
