@@ -12,6 +12,7 @@
   </head>
   <body>
     <div
+      id="home"
       class="bg-[url('../assets/images/background-diamond.png')] h-full bg-cover"
     >
       <!-- HEADER -->
@@ -19,7 +20,7 @@
         class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-16 md:pr-16 xl:pl-24 xl:pr-32 md:pt-16 sm:pt-12 sm:px-4 pt-12 px-4"
       >
         <div
-          class="lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
+          class="animate-in md:slide-in-from-left slide-in-from-top duration-2s lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
         >
           <p
             class="font-poppins md:font-semibold sm:font-medium font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base"
@@ -49,7 +50,7 @@
         </div>
         <div class="mx-auto md:mx-0 my-5 md:my-auto">
           <div
-            class="border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
+            class="animate-in md:slide-in-from-top slide-in-from-bottom duration-2s border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
           >
             <div class="grid grid-cols-2 divide-x mb-3 divide-vintage">
               <div class="text-center md:pr-10 pr-5">
@@ -86,40 +87,45 @@
         </div>
       </div>
       <!-- MOSQUE ILLUSTRATION -->
-      <img
-        id="responsive-image"
-        src="assets/images/mosque-illustration-large-long.png"
-        class="justify-end object-cover w-full object-top h-full mt-0"
-        alt=""
-      />
-      <!-- GREETING -->
-      <div
-        class="bg-[url('../assets/images/middle-land-illustration.png')] h-fit bg-cover lg:p-32 md:p-20 sm:p-16 p-16"
-      >
-        <div class="flex">
-          <div class="mx-auto text-center">
-            <h4
-              class="font-croissantOne text-white lg:text-3xl sm:text-lg md:text-xl text-lg md:my-8 sm:my-4 my-4"
-            >
-              Assalamualaikum
-            </h4>
-            <p
-              class="font-poppins md:font-normal font-light text-white lg:text-lg md:text-base text-xs sm:text-xs"
-            >
-              Bagaimana kabarnya pakde, bude, om, tante, mas, mbak, dan
-              adek-adek? Semoga sehat semua yaa
-            </p>
-            <p
-              class="font-poppins md:font-normal font-light text-white lg:text-lg md:text-base text-xs sm:text-xs mt-3"
-            >
-              Wah... gak kerasa udah lorem ipsum dolor sit amet
-            </p>
+      <div class="animate-in slide-in-from-bottom duration-2s">
+        <img
+          id="responsive-image"
+          src="assets/images/mosque-illustration-large-long.png"
+          class="justify-end object-cover w-full object-top h-full mt-0"
+          alt=""
+        />
+        <!-- GREETING -->
+        <div
+          class="bg-[url('../assets/images/middle-land-illustration.png')] h-fit bg-cover lg:p-32 md:p-20 sm:p-16 p-16"
+        >
+          <div class="flex">
+            <div id="greeting" class="mx-auto text-center opacity-0">
+              <h4
+                class="animate-in slide-in-from-bottom duration-1000 delay-1s font-croissantOne text-white lg:text-3xl sm:text-lg md:text-xl text-lg md:my-8 sm:my-4 my-4"
+              >
+                Assalamualaikum
+              </h4>
+              <p
+                class="animate-in slide-in-from-bottom duration-1000 delay-2s font-poppins md:font-normal font-light text-white lg:text-lg md:text-base text-xs sm:text-xs"
+              >
+                Bagaimana kabarnya pakde, bude, om, tante, mas, mbak, dan
+                adek-adek? Semoga sehat semua yaa
+              </p>
+              <p
+                class="animate-in slide-in-from-bottom duration-1000 delay-3s font-poppins md:font-normal font-light text-white lg:text-lg md:text-base text-xs sm:text-xs mt-3"
+              >
+                Wah... gak kerasa udah lorem ipsum dolor sit amet
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- RUNDOWN -->
-    <div class="md:px-16 xl:px-24 md:py-20 sm:py-12 sm:px-4 py-12 px-4">
+    <div
+      id="rundown"
+      class="md:px-16 xl:px-24 md:py-20 sm:py-12 sm:px-4 py-12 px-4"
+    >
       <div
         class="flex lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap gap-x-24 gap-y-8 md:px-4 sm:px-2 px-2 sm:text-center text-center md:text-left"
       >
@@ -281,7 +287,7 @@
       class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
     ></div>
     <!-- TEMPAT -->
-    <div class="md:px-16 xl:px-24 md:pt-20 pt-12 sm:px-4 px-4">
+    <div id="location" class="md:px-16 xl:px-24 md:pt-20 pt-12 sm:px-4 px-4">
       <div
         class="flex lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap gap-x-24 gap-y-8 md:px-4 sm:px-2 px-2 sm:text-center text-center md:text-left"
       >
@@ -328,467 +334,474 @@
       </div>
     </div>
     <!-- SPESIFIKASI TEMPAT -->
-    <div id="controls-carousel" class="relative w-full" data-carousel="static">
-      <div class="relative md:h-[67rem] h-[58rem] overflow-hidden">
-        <!-- CAROUSEL 1 -->
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="md:px-16 xl:px-24 sm:px-6 px-6">
-            <img
-              src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Map-of-a-top-view-by-AlexZel-580x386.jpg"
-              class="w-full object-cover lg:h-144 md:h-96 sm:h-64 h-64 border-0 rounded-md md:mb-12 mb-8"
-              alt=""
-            />
-            <div
-              class="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-10"
-            >
-              <div class="md:col-span-2 md:mb-0 sm:mb-3 mb-3">
-                <p
-                  class="font-poppins md:font-semibold sm:font-medium font-medium text-mediumBlue lg:text-2xl md:text-xl text-base sm:text-base md:mx-4 sm:mx-2 mx-2"
-                >
-                  Villa 52
-                </p>
-                <!-- Item spec 1 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Spesifikasi Villa
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item spec 2 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Fasilitas Kamar Tidur
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item spec 3 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Fasilitas Kamar Mandi
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PENGHUNI -->
-              <div
-                class="bg-whiten rounded-lg md:px-7 md:py-8 sm:py-5 sm:px-7 py-5 px-5 h-fit"
-              >
-                <p
-                  class="font-croissantOne md:text-lg sm:text-base text-base text-mediumBlue md:mb-3 sm:mb-1 mb-1"
-                >
-                  Penghuni
-                </p>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- CAROUSEL ITEM 2 -->
-        <div
-          class="hidden duration-700 ease-in-out"
-          data-carousel-item="active"
-        >
-          <div class="md:px-16 xl:px-24 sm:px-6 px-6 md:pb-20 pb-12">
-            <img
-              src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Map-of-a-top-view-by-AlexZel-580x386.jpg"
-              class="w-full object-cover lg:h-144 md:h-96 sm:h-64 h-64 border-0 rounded-md md:mb-12 mb-8"
-              alt=""
-            />
-            <div
-              class="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-10"
-            >
-              <div class="md:col-span-2 md:mb-0 sm:mb-3 mb-3">
-                <p
-                  class="font-poppins md:font-semibold sm:font-medium font-medium text-mediumBlue lg:text-2xl md:text-xl text-base sm:text-base md:mx-4 sm:mx-2 mx-2"
-                >
-                  Villa 52
-                </p>
-                <!-- Item spec 1 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Spesifikasi Villa
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item spec 2 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Fasilitas Kamar Tidur
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Item spec 3 -->
-                <div
-                  class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
-                ></div>
-                <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
-                  <p
-                    class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
-                  >
-                    Fasilitas Kamar Mandi
-                  </p>
-                  <div
-                    class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
-                  >
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                    <div class="flex gap-x-3">
-                      <span
-                        class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
-                      ></span>
-                      <p
-                        class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-                      >
-                        2 Kamar tidur
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PENGHUNI -->
-              <div
-                class="bg-whiten rounded-lg md:px-7 md:py-8 sm:py-5 sm:px-7 py-5 px-5 h-fit"
-              >
-                <p
-                  class="font-croissantOne md:text-lg sm:text-base text-base text-mediumBlue md:mb-3 sm:mb-1 mb-1"
-                >
-                  Penghuni
-                </p>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-                <div class="py-2">
-                  <p
-                    class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
-                  >
-                    John Doe
-                  </p>
-                  <div
-                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
-                  ></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Slider controls -->
+    <div class="relative">
       <div
-        class="flex justify-center gap-2 md:px-16 xl:px-24 sm:px-6 px-6 md:pb-20 pb-12"
+        id="controls-carousel"
+        class="relative w-full"
+        data-carousel="static"
       >
-        <div
-          class="flex justify-center items-center p-3 cursor-pointer focus:outline-none bg-vintage hover:bg-lightVintage rounded-full"
-          data-carousel-prev
-          data-tooltip-target="tooltip-prev"
-        >
-          <span
-            class="icon-[mdi--keyboard-arrow-left] w-6 h-6 text-white"
-          ></span>
+        <div class="relative md:h-[67rem] h-[58rem] overflow-hidden">
+          <!-- CAROUSEL 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="md:px-16 xl:px-24 sm:px-6 px-6">
+              <img
+                src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Map-of-a-top-view-by-AlexZel-580x386.jpg"
+                class="w-full object-cover lg:h-144 md:h-96 sm:h-64 h-64 border-0 rounded-md md:mb-12 mb-8"
+                alt=""
+              />
+              <div
+                class="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-10"
+              >
+                <div class="md:col-span-2 md:mb-0 sm:mb-3 mb-3">
+                  <p
+                    class="font-poppins md:font-semibold sm:font-medium font-medium text-mediumBlue lg:text-2xl md:text-xl text-base sm:text-base md:mx-4 sm:mx-2 mx-2"
+                  >
+                    Villa 52
+                  </p>
+                  <!-- Item spec 1 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Spesifikasi Villa
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item spec 2 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Fasilitas Kamar Tidur
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item spec 3 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Fasilitas Kamar Mandi
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- PENGHUNI -->
+                <div
+                  class="bg-whiten rounded-lg md:px-7 md:py-8 sm:py-5 sm:px-7 py-5 px-5 h-fit"
+                >
+                  <p
+                    class="font-croissantOne md:text-lg sm:text-base text-base text-mediumBlue md:mb-3 sm:mb-1 mb-1"
+                  >
+                    Penghuni
+                  </p>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- CAROUSEL ITEM 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <div class="md:px-16 xl:px-24 sm:px-6 px-6 md:pb-20 pb-12">
+              <img
+                src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Map-of-a-top-view-by-AlexZel-580x386.jpg"
+                class="w-full object-cover lg:h-144 md:h-96 sm:h-64 h-64 border-0 rounded-md md:mb-12 mb-8"
+                alt=""
+              />
+              <div
+                class="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-10"
+              >
+                <div class="md:col-span-2 md:mb-0 sm:mb-3 mb-3">
+                  <p
+                    class="font-poppins md:font-semibold sm:font-medium font-medium text-mediumBlue lg:text-2xl md:text-xl text-base sm:text-base md:mx-4 sm:mx-2 mx-2"
+                  >
+                    Villa 52
+                  </p>
+                  <!-- Item spec 1 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Spesifikasi Villa
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item spec 2 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Fasilitas Kamar Tidur
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item spec 3 -->
+                  <div
+                    class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
+                  ></div>
+                  <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+                    <p
+                      class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+                    >
+                      Fasilitas Kamar Mandi
+                    </p>
+                    <div
+                      class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
+                    >
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                      <div class="flex gap-x-3">
+                        <span
+                          class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                        ></span>
+                        <p
+                          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
+                        >
+                          2 Kamar tidur
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- PENGHUNI -->
+                <div
+                  class="bg-whiten rounded-lg md:px-7 md:py-8 sm:py-5 sm:px-7 py-5 px-5 h-fit"
+                >
+                  <p
+                    class="font-croissantOne md:text-lg sm:text-base text-base text-mediumBlue md:mb-3 sm:mb-1 mb-1"
+                  >
+                    Penghuni
+                  </p>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                  <div class="py-2">
+                    <p
+                      class="font-poppins font-normal md:text-base sm:text-xs text-xs px-3 text-mediumBlue"
+                    >
+                      John Doe
+                    </p>
+                    <div
+                      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-2 sm:mt-1 mt-1"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Slider controls -->
         <div
-          id="tooltip-prev"
-          role="tooltip"
-          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          class="flex justify-center gap-2 md:px-16 xl:px-24 sm:px-6 px-6 md:pb-20 pb-12"
         >
-          Kembali
-          <div class="tooltip-arrow" data-popper-arrow></div>
-        </div>
-        <div
-          class="flex justify-center items-center p-3 cursor-pointer focus:outline-none bg-vintage hover:bg-lightVintage rounded-full"
-          data-carousel-next
-          data-tooltip-target="tooltip-next"
-        >
-          <span
-            class="icon-[mdi--keyboard-arrow-right] w-6 h-6 text-white"
-          ></span>
-        </div>
-        <div
-          id="tooltip-next"
-          role="tooltip"
-          class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-        >
-          Lihat villa selanjutnya
-          <div class="tooltip-arrow" data-popper-arrow></div>
+          <div
+            class="flex justify-center items-center p-3 cursor-pointer focus:outline-none bg-vintage hover:bg-lightVintage rounded-full"
+            data-carousel-prev
+            data-tooltip-target="tooltip-prev"
+          >
+            <span
+              class="icon-[mdi--keyboard-arrow-left] w-6 h-6 text-white"
+            ></span>
+          </div>
+          <div
+            id="tooltip-prev"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Kembali
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <div
+            class="flex justify-center items-center p-3 cursor-pointer focus:outline-none bg-vintage hover:bg-lightVintage rounded-full"
+            data-carousel-next
+            data-tooltip-target="tooltip-next"
+          >
+            <span
+              class="icon-[mdi--keyboard-arrow-right] w-6 h-6 text-white"
+            ></span>
+          </div>
+          <div
+            id="tooltip-next"
+            role="tooltip"
+            class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+          >
+            Lihat villa selanjutnya
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- DIVIDER -->
     <div
+      id="contest"
       class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
     ></div>
     <!-- LOMBA FOTO -->
@@ -908,6 +921,7 @@
     >
       <!-- GALERI -->
       <div
+        id="gallery"
         class="md:px-20 xl:px-24 md:pt-16 sm:pt-6 sm:px-6 pt-6 px-6 text-center md:mb-8 sm:mb-4 mb-4"
       >
         <h4
@@ -1132,7 +1146,57 @@
         class="w-full object-cover h-64"
       />
     </div>
+    <!-- NAVBAR -->
+    <div class="fixed bottom-0 flex justify-center inset-x-0 z-50">
+      <div
+        class="md:my-10 my-8 md:pt-3 pt-2 sm:px-10 px-6 bg-white rounded-xl shadow-md"
+      >
+        <div class="flex md:gap-x-10 gap-x-4">
+          <a
+            href="#home"
+            class="text-center md:border-b-5 border-b-4 border-greyishBlue py-1 nav-link"
+          >
+            <span
+              class="icon-[mdi--house-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
+            ></span>
+            <p class="font-poppins md:text-sm text-xs text-mediumBlue">
+              Beranda
+            </p>
+          </a>
+          <a href="#rundown" class="text-center py-1 nav-link">
+            <span
+              class="icon-[mdi--event] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
+            ></span>
+            <p class="font-poppins md:text-sm text-xs text-mediumBlue">Acara</p>
+          </a>
+          <a href="#location" class="text-center py-1 nav-link">
+            <span
+              class="icon-[mdi--location-on-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
+            ></span>
+            <p class="font-poppins md:text-sm text-xs text-mediumBlue">
+              Tempat
+            </p>
+          </a>
+          <a href="#contest" class="text-center py-1 nav-link">
+            <span
+              class="icon-[mdi--medal-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
+            ></span>
+            <p class="font-poppins md:text-sm text-xs text-mediumBlue">Lomba</p>
+          </a>
+          <a href="#gallery" class="text-center py-1 nav-link">
+            <span
+              class="icon-[mdi--image-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
+            ></span>
+            <p class="font-poppins md:text-sm text-xs text-mediumBlue">
+              Galeri
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="js/script-home.js"></script>
   </body>
 </html>

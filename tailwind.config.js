@@ -30,6 +30,7 @@ module.exports = {
         0.5: "0.5px",
         1: "1px",
         3.5: "3.5px",
+        5: "5px",
       },
       height: {
         112: "28rem",
@@ -39,6 +40,16 @@ module.exports = {
       },
       animationDuration: {
         "2s": "2s",
+        "3s": "3s",
+        "4s": "4s",
+      },
+      animationDelay: {
+        "2s": "2s",
+        "3s": "3s",
+        "4s": "4s",
+        "5s": "5s",
+        "6s": "7s",
+        "8s": "8s",
       },
     },
   },
