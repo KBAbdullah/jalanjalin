@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         whiten: "#F4F5F7",
+        whiter: "#F0F1F4",
         lightVintage: "#E7DFD0",
         vintage: "#9A8354",
         darkBlue: "#08182F",
@@ -43,13 +44,72 @@ module.exports = {
         "3s": "3s",
         "4s": "4s",
       },
-      animationDelay: {
+      transitionDelay: {
         "2s": "2s",
         "3s": "3s",
         "4s": "4s",
         "5s": "5s",
         "6s": "7s",
         "8s": "8s",
+      },
+      keyframes: {
+        slideInFromTop: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideInFromBottom: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideInFromLeft: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        slideInFromRight: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        wave: {
+          "0%": { transform: "rotate(0.0deg)" },
+          "10%": { transform: "rotate(14deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10.0deg)" },
+          "60%": { transform: "rotate(0.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
+        },
+      },
+      animation: {
+        slideInFromTop: "slideInFromTop 0.5s ease-out",
+        slideInFromBottom: "slideInFromBottom 0.5s ease-out",
+        slideInFromLeft: "slideInFromLeft 0.5s ease-out",
+        slideInFromRight: "slideInFromRight 0.5s ease-out",
+        waving: "wave 2s linear infinite",
       },
     },
   },
@@ -60,6 +120,6 @@ module.exports = {
     addDynamicIconSelectors(),
     require("@tailwindcss/aspect-ratio"),
     require("flowbite/plugin"),
-    require("tailwindcss-animate"),
+    // require("tailwindcss-animate"),
   ],
 };
