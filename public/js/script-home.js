@@ -51,9 +51,9 @@ fetch("https://jalanjalin-api.onrender.com/all_greetings")
       const dateString = chat.datetime;
       const date = moment(dateString);
       const formattedDate = date.format("DD MMM YYYY HH:mm");
-      chats += `<div class="item-chat flex justify-center gap-2.5 mb-5">
+      chats += `<div class="item-chat flex justify-start gap-2.5 mb-5">
           <div
-            class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700"
+            class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 bg-whiten rounded-e-xl rounded-es-xl"
           >
             <div class="flex items-center space-x-2 rtl:space-x-reverse">
               <span class="text-sm font-semibold text-gray-900 dark:text-white"
@@ -77,7 +77,6 @@ fetch("https://jalanjalin-api.onrender.com/all_greetings")
 // ADD UCAPAN
 const formGreeting = document.querySelector(".form");
 formGreeting.addEventListener("submit", (event) => {
-  event.preventDefault();
   const name = document.getElementById("username").value;
   const greeting = document.getElementById("ucapan").value;
 
