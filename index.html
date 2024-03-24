@@ -17,7 +17,7 @@
           <div class="flex">
             <img
               src="public/assets/images/decor-left.png"
-              class="absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_2s_ease-in-out] absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -39,7 +39,7 @@
             />
             <img
               src="public/assets/images/decor-right.png"
-              class="absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_2s_ease-in-out] absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -54,23 +54,27 @@
           <div class="md:hidden flex justify-center mb-8">
             <img
               src="public/assets/images/lantern.png"
-              class="w-5 h-fit"
+              class="animate-[fadeIn_2s_ease-in-out] w-5 h-fit"
               alt=""
             />
           </div>
           <div class="flex justify-center">
             <div
-              class="border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
+              class="animate-[slideInFromLeft_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
             ></div>
             <h4
-              class="font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
+              class="animate-[slideInFromTop_2s_ease-in-out] font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
             >
               HALAL BIHALAL
             </h4>
-            <div class="border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"></div>
+            <div
+              class="animate-[slideInFromRight_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 my-3"
+            ></div>
           </div>
 
-          <div class="flex justify-center gap-2 items-center my-2">
+          <div
+            class="animate-[slideInFromLeft_2s_ease-in-out] flex justify-center gap-2 items-center my-2"
+          >
             <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
               Jalan
             </h4>
@@ -79,7 +83,9 @@
             </h4>
           </div>
 
-          <div class="flex justify-center gap-2 items-center md:mb-4 mb-2">
+          <div
+            class="animate-[slideInFromRight_2s_ease-in-out] flex justify-center gap-2 items-center md:mb-4 mb-2"
+          >
             <h4 class="font-croissantOne md:text-8xl text-5xl text-mediumBlue">
               Jalin
             </h4>
@@ -91,12 +97,14 @@
           </div>
 
           <h4
-            class="text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
+            class="animate-[slideInFromBottom_2s_ease-in-out] text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
           >
             KELUARGA BESAR ABDULLAH SALAM
           </h4>
 
-          <div class="flex justify-center items-center mt-4 mb-8 mr-4">
+          <div
+            class="animate-[slideInFromBottom_2s_ease-in-out] flex justify-center items-center mt-4 mb-8 mr-4"
+          >
             <div class="text-right py-2 md:px-6 px-4 tracking-wider">
               <p
                 class="font-poppins md:text-lg text-sm font-medium text-greyishBlue"
@@ -131,14 +139,16 @@
           </div>
 
           <button
-            class="animate-bounce ease-in flex bg-mediumBlue rounded-xl font-poppins text-white font-normal md:text-large sm:text-sm text-sm mx-auto px-5 py-3 hover:bg-greyishBlue"
+            class="animate-bounce ease-in flex bg-mediumBlue rounded-xl font-poppins text-white font-normal md:text-large sm:text-sm text-sm mx-auto px-5 py-3 hover:bg-greyishBlue shadow-lg"
           >
             <a href="public/home.html">Buka Undangan</a>
           </button>
         </div>
       </div>
 
-      <div class="flex-grow relative">
+      <div
+        class="animate-[slideInFromBottom_2s_ease-in-out] flex-grow relative"
+      >
         <img
           id="responsive-image"
           src="public/assets/images/mosque-illustration-small.png"
@@ -148,4 +158,14 @@
       </div>
     </div>
   </body>
+  <script>
+    function revealElements() {
+      const elements = document.querySelectorAll("#content > *");
+      elements.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.remove("hidden");
+        }, index * 500); // Adjust the delay time (500ms here) as needed
+      });
+    }
+  </script>
 </html>

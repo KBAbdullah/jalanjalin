@@ -25,7 +25,7 @@
           <div class="flex">
             <img
               src="assets/images/decor-left.png"
-              class="absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_2s_ease-in-out] absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -47,7 +47,7 @@
             />
             <img
               src="assets/images/decor-right.png"
-              class="absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_2s_ease-in-out] absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -60,21 +60,29 @@
 
         <div class="md:py-24 py-24">
           <div class="md:hidden flex justify-center mb-8">
-            <img src="assets/images/lantern.png" class="w-5 h-fit" alt="" />
+            <img
+              src="assets/images/lantern.png"
+              class="animate-[fadeIn_2s_ease-in-out] w-5 h-fit"
+              alt=""
+            />
           </div>
           <div class="flex justify-center">
             <div
-              class="border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
+              class="animate-[slideInFromLeft_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
             ></div>
             <h4
-              class="font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
+              class="animate-[slideInFromTop_2s_ease-in-out] font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
             >
               HALAL BIHALAL
             </h4>
-            <div class="border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"></div>
+            <div
+              class="animate-[slideInFromRight_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"
+            ></div>
           </div>
 
-          <div class="flex justify-center gap-2 items-center my-2">
+          <div
+            class="animate-[slideInFromLeft_2s_ease-in-out] flex justify-center gap-2 items-center my-2"
+          >
             <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
               Jalan
             </h4>
@@ -83,7 +91,9 @@
             </h4>
           </div>
 
-          <div class="flex justify-center gap-2 items-center md:mb-4 mb-2">
+          <div
+            class="animate-[slideInFromRight_2s_ease-in-out] flex justify-center gap-2 items-center md:mb-4 mb-2"
+          >
             <h4 class="font-croissantOne md:text-8xl text-5xl text-mediumBlue">
               Jalin
             </h4>
@@ -95,12 +105,14 @@
           </div>
 
           <h4
-            class="text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
+            class="animate-[slideInFromBottom_2s_ease-in-out] text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
           >
             KELUARGA BESAR ABDULLAH SALAM
           </h4>
 
-          <div class="flex justify-center items-center mt-4 mb-8 mr-4">
+          <div
+            class="animate-[slideInFromBottom_2s_ease-in-out] flex justify-center items-center mt-4 mb-8 mr-4"
+          >
             <div class="text-right py-2 md:px-6 px-4 tracking-wider">
               <p
                 class="font-poppins md:text-lg text-sm font-medium text-greyishBlue"
@@ -136,7 +148,9 @@
         </div>
       </div>
 
-      <div class="flex-grow relative">
+      <div
+        class="animate-[slideInFromBottom_2s_ease-in-out] flex-grow relative"
+      >
         <img
           id="responsive-image"
           src="assets/images/mosque-illustration-small.png"
@@ -192,15 +206,23 @@
       >
         Apa kata mereka
       </h4>
-      <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 max-sm:px-4">
-        <div
+      <div
+        class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 max-sm:px-4 max-sm:w-full"
+        id="greeting-chats"
+      >
+        <!-- <div
           class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
         >
-          <p
-            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
-          >
-            Saya
-          </p>
+          <div class="flex gap-x-4">
+            <p
+              class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
+            >
+              Saya
+            </p>
+            <span class="font-poppins text-sm font-normal text-vintage"
+              >23 Mar 10.00</span
+            >
+          </div>
           <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
             Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
           </p>
@@ -228,7 +250,7 @@
           <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
             Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -525,7 +547,7 @@
           >
             <img
               src="assets/images/halal_bihalal_3.jpg"
-              class="md:w-100 md:h-64 w-80 h-56 object-cover rounded-md"
+              class="md:w-100 md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -538,7 +560,7 @@
           >
             <img
               src="assets/images/halal_bihalal_1.jpg"
-              class="md:w-full md:h-64 w-80 h-56 object-cover rounded-md"
+              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -551,7 +573,7 @@
           >
             <img
               src="assets/images/halal_bihalal_2.jpg"
-              class="md:w-full md:h-64 w-80 h-56 object-cover rounded-md"
+              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -564,7 +586,7 @@
           >
             <img
               src="assets/images/halal_bihalal_4.jpg"
-              class="md:w-full md:h-64 w-80 h-56 object-cover rounded-md"
+              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -577,7 +599,7 @@
           >
             <img
               src="assets/images/halal_bihalal_5.jpg"
-              class="md:w-full md:h-64 w-80 h-56 object-cover rounded-md"
+              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -847,7 +869,7 @@
           </p>
         </div>
         <div
-          class="bg-whiter shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
+          class="bg-whiten shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
         >
           <span class="icon-[mdi--world] md:w-10 md:h-10 w-9 h-9 mb-2"></span>
           <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
@@ -878,7 +900,7 @@
         menangkap momen yang spesial!
       </p>
       <div
-        class="flex items-center hover:bg-greyishBlue mx-auto rounded-xl bg-mediumBlue md:py-3 md:px-12 py-3 px-8 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 shadow-lg"
+        class="flex items-center hover:bg-greyishBlue mx-auto rounded-xl bg-mediumBlue md:py-3 md:px-12 py-3 px-6 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 shadow-lg"
       >
         <span
           class="icon-[mdi--web] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-white"
@@ -887,7 +909,7 @@
           href="#"
           class="font-poppins font-normal md:text-base sm:text-sm text-sm text-white"
         >
-          https://bit.ly/PengumpulanFoto
+          http://bit.ly/LombaFotoJalanJalin24
         </a>
       </div>
     </div>
@@ -1012,6 +1034,8 @@
         Ayo, cek galeri foto di Google Drive!
       </p>
       <a
+        href="https://drive.google.com/drive/folders/1fxt_0JTvG1bXpcA9-gbFOgBvgbet3DwA?usp=drive_link"
+        target="blank"
         class="px-5 py-3 font-poppins text-center font-normal rounded-xl bg-mediumBlue text-white md:text-xl text-sm cursor-pointer shadow-lg"
       >
         Halal Bihalal KB Abdullah Salam 2023
@@ -1128,16 +1152,68 @@
                 id="ucapan"
                 cols="30"
                 rows="5"
-                class="bg-white shadow border-0 text-gray-900 rounded-lg block w-full md:px-6 md:py-3 px-4 py-3 md:text-sm text-sm focus:border-0 focus:ring-0 font-poppins font-normal"
-              >
-              </textarea>
+                placeholder="Berikan ucapan dan doamu untuk acara ini..."
+                class="bg-white shadow border-0 text-gray-900 rounded-lg block w-full md:px-6 md:py-3 px-4 py-3 md:text-sm text-sm focus:border-0 focus:ring-0 font-poppins font-normal placeholder-font-light placeholder-text-black"
+              ></textarea>
             </div>
             <button
               type="submit"
+              data-modal-target="popup-modal"
+              data-modal-toggle="popup-modal"
               class="flex justify-center items-center bg-mediumBlue rounded-xl font-poppins text-white font-normal text-sm mx-auto px-5 py-2.5 hover:bg-greyishBlue"
             >
               Kirim ucapan
             </button>
+
+            <div
+              id="popup-modal"
+              tabindex="-1"
+              class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            >
+              <div class="relative p-4 w-full max-w-md max-h-full">
+                <div
+                  class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                >
+                  <button
+                    type="button"
+                    class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="popup-modal"
+                  >
+                    <svg
+                      class="w-3 h-3"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 14"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                      />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                  <div class="py-8 px-6 md:p-5 text-center">
+                    <h3
+                      class="font-poppins mb-5 pt-10 text-md font-normal text-mediumBlue"
+                    >
+                      Terimakasih atas ucapan dan doanya 🙏 <br />Sehat selalu
+                      ya 🙌
+                    </h3>
+                    <button
+                      data-modal-hide="popup-modal"
+                      type="button"
+                      class="py-2.5 px-5 ms-3 text-sm font-medium text-white font-poppins focus:outline-none bg-vintage rounded-lg focus:ring-0 outline-none"
+                    >
+                      Okayy, sama-sama!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
         <div class="border-0.5 rounded-lg border-solid border-gray-300">
@@ -1238,6 +1314,7 @@
           ></span>
           <a
             href="https://www.instagram.com/kb_abdullahsalam?igsh=MTV5MmhlcWl6aGE2eA=="
+            target="_blank"
             class="font-poppins font-light md:text-base sm:text-sm text-sm md:pr-10 pr-3"
           >
             Instagram

@@ -21,9 +21,6 @@ module.exports = {
         babyBlue: "#455D83",
         softBlue: "#687C9F",
       },
-      // backgroundImage: {
-      //   diamond: "url('/public/assets/images/background-diamond.png')",
-      // },
       textUnderlineOffset: {
         12: "12px",
         16: "16px",
@@ -43,6 +40,7 @@ module.exports = {
         168: "42rem",
       },
       width: {
+        88: "22rem",
         100: "26rem",
         112: "28rem",
         128: "32rem",
@@ -63,6 +61,14 @@ module.exports = {
         "8s": "8s",
       },
       keyframes: {
+        fadeIn: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
         slideInFromTop: {
           "0%": {
             opacity: "0",
@@ -115,6 +121,7 @@ module.exports = {
         },
       },
       animation: {
+        fadeIn: "fadeIn 0.5s ease-out",
         slideInFromTop: "slideInFromTop 0.5s ease-out",
         slideInFromBottom: "slideInFromBottom 0.5s ease-out",
         slideInFromLeft: "slideInFromLeft 0.5s ease-out",

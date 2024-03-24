@@ -59,6 +59,7 @@ function fetchChatData() {
     .then((res) => {
       const datas = res.data;
       let chats = "";
+      let chats_greeting = "";
       datas.forEach((chat) => {
         const dateString = chat.datetime;
         const date = moment(dateString);
@@ -80,13 +81,70 @@ function fetchChatData() {
             </p>
           </div>
         </div>`;
+        // chats_greeting += `<div
+        //   class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
+        // >
+        //   <div class="flex gap-x-4">
+        //     <p
+        //       class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
+        //     >
+        //       ${chat.name}
+        //     </p>
+        //     <span class="font-poppins text-sm font-normal text-vintage"
+        //       >${formattedDate}</span
+        //     >
+        //   </div>
+        //   <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+        //     ${chat.greeting}
+        //   </p>
+        // </div>`;
       });
       console.log(chats);
       document.getElementById("chats").innerHTML = chats;
+      // document.getElementById("greeting-chats").innerHTML = chats_greeting;
     })
     .catch((error) => console.log(error));
 }
 
+function fetchLatest() {
+  fetch("https://jalanjalin-api.onrender.com/all_greetings")
+    .then((response) => response.json())
+    .then((res) => {
+      const datas = res.data;
+
+      // Get the three latest data
+      const latestData = datas.slice(0, 3);
+
+      let chats_greeting = "";
+      latestData.forEach((chat) => {
+        const dateString = chat.datetime;
+        const date = moment(dateString);
+        const formattedDate = date.format("DD MMM YYYY HH:mm");
+        chats_greeting += `<div
+          class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
+        >
+          <div class="flex gap-x-4">
+            <p
+              class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
+            >
+              ${chat.name}
+            </p>
+            <span class="font-poppins text-sm font-normal text-vintage"
+              >${formattedDate}</span
+            >
+          </div>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+            ${chat.greeting}
+          </p>
+        </div>`;
+      });
+      console.log(chats);
+      document.getElementById("greeting-chats").innerHTML = chats_greeting;
+    })
+    .catch((error) => console.log(error));
+}
+
+fetchLatest();
 // Initial fetch of chat data
 fetchChatData();
 
