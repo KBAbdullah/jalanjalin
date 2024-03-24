@@ -1784,6 +1784,10 @@ input:checked + .toggle-bg {
   margin-top: 2rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -2883,6 +2887,10 @@ input:checked + .toggle-bg {
   row-gap: 2rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -3496,6 +3504,21 @@ input:checked + .toggle-bg {
   border-color: rgb(154 131 84 / var(--tw-border-opacity));
 }
 
+.border-softBlue {
+  --tw-border-opacity: 1;
+  border-color: rgb(104 124 159 / var(--tw-border-opacity));
+}
+
+.border-babyBlue {
+  --tw-border-opacity: 1;
+  border-color: rgb(69 93 131 / var(--tw-border-opacity));
+}
+
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -3728,11 +3751,6 @@ input:checked + .toggle-bg {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .px-2 {
