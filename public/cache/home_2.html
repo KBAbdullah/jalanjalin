@@ -10,147 +10,288 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div
-      id="home"
-      class="bg-[url('../assets/images/background-diamond.png')] h-full bg-cover"
-    >
-      <!-- HEADER -->
-      <div
-        class="flex sm:flex-wrap md:flex-nowrap flex-wrap justify-between md:pl-16 md:pr-16 xl:pl-24 xl:pr-32 md:pt-16 sm:pt-12 sm:px-4 pt-12 px-4"
-      >
-        <div
-          class="md:animate-[slideInFromLeft_2s_ease-in-out] slideInFromTop_2s_ease-in-out lg:text-left md:text-left sm:text-center text-center md:mx-0 sm:mx-auto mx-auto"
-        >
-          <p
-            class="font-poppins md:font-semibold sm:font-medium font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base"
-          >
-            HALAL BIHALAL
-          </p>
-          <img
-            src="assets/images/stars.png"
-            class="absolute top-7 md:left-96 sm:left-64 left-64 md:h-20 md:w-20 sm:h-12 sm:w-12 w-12 h-12 object-cover"
-            alt=""
-          />
-          <h2
-            class="lg:text-8xl md:text-6xl sm:text-4xl text-4xl text-darkBlue font-croissantOne md:mt-3.5 md:mb-4 my-2.5"
-          >
-            Jalan Jalin
-          </h2>
-          <h4
-            class="font-croissantOne text-darkBlue md:text-3xl sm:text-xl text-xl"
-          >
-            Keluarga Besar Abdullah Salam
-          </h4>
-          <p
-            class="font-poppins md:font-semibold font-medium tracking-widest text-vintage md:text-xl text-base sm:text-base md:mt-4 mt-3"
-          >
-            JALAN-JALAN MENJALIN SILATURAHMI
-          </p>
+  <body class="bg-white">
+    <div class="min-h-screen flex flex-col justify-between">
+      <div id="home">
+        <div class="flex justify-between">
+          <div class="flex">
+            <img
+              src="assets/images/decor-left.png"
+              class="absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              alt=""
+            />
+            <img
+              src="assets/images/lantern.png"
+              class="max-sm:hidden absolute left-48 top-0 w-14 h-fit"
+              alt=""
+            />
+            <img
+              src="assets/images/star-hanging.png"
+              class="max-sm:hidden absolute left-32 top-0 w-14 h-fit"
+              alt=""
+            />
+          </div>
+          <div class="flex">
+            <img
+              src="assets/images/star-hanging.png"
+              class="max-sm:hidden absolute right-32 w-14 h-fit z-10"
+              alt=""
+            />
+            <img
+              src="assets/images/decor-right.png"
+              class="absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              alt=""
+            />
+            <img
+              src="assets/images/lantern.png"
+              class="max-sm:hidden absolute right-48 top-0 w-14 h-fit"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="mx-auto md:mx-0 my-5 md:my-auto">
-          <div
-            class="md:animate-[slideInFromTop_2s_ease-in-out] animate-[slideInFromBottom_2s_ease-in-out] border-dashed border-2 border-vintage md:p-5 p-4 h-min border-l-0 border-r-0 md:mb-7 mb-5"
-          >
-            <div class="grid grid-cols-2 divide-x mb-3 divide-vintage">
-              <div class="text-center md:pr-10 pr-5">
-                <p
-                  class="font-poppins font-semibold md:text-2xl sm:text-large text-large"
-                >
-                  11 APR
-                </p>
-                <p
-                  class="font-poppins font-normal md:text-xl sm:text-base text-base"
-                >
-                  14.00 WIB
-                </p>
-              </div>
-              <div class="text-center md:pl-10 pl-5">
-                <p
-                  class="font-poppins font-semibold md:text-2xl sm:text-large text-large"
-                >
-                  12 APR
-                </p>
-                <p
-                  class="font-poppins font-normal md:text-xl sm:text-base text-base"
-                >
-                  12.00 WIB
-                </p>
-              </div>
-            </div>
+
+        <div class="md:py-24 py-10">
+          <div class="md:hidden flex justify-center mb-8">
+            <img src="assets/images/lantern.png" class="w-5 h-fit" alt="" />
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
+            ></div>
             <h4
-              class="font-poppins font-semibold md:text-3xl sm:text-xl text-xl text-center"
+              class="font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
             >
-              2024
+              HALAL BIHALAL
+            </h4>
+            <div class="border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"></div>
+          </div>
+
+          <div class="flex justify-center gap-2 items-center my-2">
+            <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
+              Jalan
+            </h4>
+            <h4 class="font-croissantOne md:text-8xl text-5xl text-mediumBlue">
+              Jalan
             </h4>
           </div>
-        </div>
-      </div>
-      <!-- MOSQUE ILLUSTRATION -->
-      <div class="animate-[slideInFromBottom_2s_ease-in-out]">
-        <img
-          id="responsive-image"
-          src="assets/images/mosque-illustration-large-long.png"
-          class="justify-end object-cover w-full object-top h-full mt-0"
-          alt=""
-        />
-        <!-- GREETING -->
-        <!-- <div
-          class="bg-[url('../assets/images/middle-land-illustration.png')] h-fit bg-cover lg:p-32 md:p-20 sm:py-16 py-16 px-10"
-        > -->
-        <div
-          class="bg-white h-fit bg-cover lg:p-32 md:p-20 sm:py-16 py-16 px-10"
-        >
-          <div class="flex">
-            <div id="greeting" class="mx-auto text-center text-darkBlue">
-              <h4
-                class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl sm:text-lg md:text-xl text-lg md:my-8 sm:my-4 my-4"
-              >
-                Assalamualaikum<span>👋🏻</span>
-              </h4>
+
+          <div class="flex justify-center gap-2 items-center md:mb-4 mb-2">
+            <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
+              Men
+            </h4>
+            <h4 class="font-croissantOne md:text-8xl text-5xl text-mediumBlue">
+              Jalin
+            </h4>
+            <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
+              Silaturahmi
+            </h4>
+          </div>
+
+          <h4
+            class="text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
+          >
+            KELUARGA BESAR ABDULLAH SALAM
+          </h4>
+
+          <div class="flex justify-center my-8">
+            <div
+              class="text-right border-y-2 border-mediumBlue border-solid py-2 md:px-8 px-3 mx-2"
+            >
               <p
-                class="animate-[slideInFromBottom_1s_ease-in-out_4s] font-poppins md:font-normal font-light lg:text-lg md:text-base text-xs sm:text-xs"
+                class="font-poppins md:text-xl text-base font-semibold text-mediumBlue"
               >
-                Bagaimana kabarnya pakde, bude, om, tante, mas, mbak, dan
-                adek-adek? Semoga sehat semua yaa
+                11 APR
               </p>
               <p
-                class="animate-[slideInFromBottom_1s_ease-in-out_5s] font-poppins md:font-normal font-light lg:text-lg md:text-base text-xs sm:text-xs mt-3"
+                class="font-poppins md:text-xl text-base font-semibold text-mediumBlue"
               >
-                Wah, tidak terasa sudah tiba lagi momen Idul Fitri yang penuh
-                berkah, yang menandakan bahwa acara Halal Bi Halal kita pun
-                semakin dekat.
+                14.00 WIB
+              </p>
+            </div>
+
+            <h4
+              class="font-poppins md:font-semibold font-bold md:text-4xl text-2xl text-mediumBlue border-x-2 border-mediumBlue border-solid md:px-6 px-4"
+            >
+              20<br />24
+            </h4>
+
+            <div
+              class="border-y-2 border-mediumBlue border-solid py-2 md:px-8 px-3 mx-2"
+            >
+              <p
+                class="font-poppins md:text-xl text-base font-semibold text-mediumBlue"
+              >
+                12 APR
+              </p>
+              <p
+                class="font-poppins md:text-xl text-base font-semibold text-mediumBlue"
+              >
+                12.00 WIB
               </p>
             </div>
           </div>
         </div>
-        <div id="chats"></div>
+      </div>
+
+      <!-- GREETING -->
+      <div class="flex-grow relative">
+        <img
+          id="responsive-image"
+          src="assets/images/mosque-illustration-small.png"
+          class="animate-in slide-in-from-bottom duration-2s md:hidden object-cover w-full h-fit absolute bottom-0"
+          alt=""
+        />
       </div>
     </div>
-    <!-- RUNDOWN -->
-    <div
-      id="rundown"
-      class="md:px-16 xl:px-24 md:py-20 sm:py-12 sm:px-4 py-12 px-4"
-    >
-      <div class="text-center">
-        <h4
-          class="animate-[slideInFromBottom_1s_ease-in-out] font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg"
-        >
-          Susunan Acara
+
+    <div class="md:py-24 md:px-64 px-10 py-16">
+      <div
+        id="greeting"
+        class="flex flex-col justify-center items-center text-darkBlue"
+      >
+        <!-- <img
+          src="assets/images/moon-half.png"
+          alt=""
+          class="md:w-12 w-8 h-auto pb-10"
+        /> -->
+        <!-- <h4 class="font-croissantOne lg:text-3xl md:text-xl text-2xl py-6">
+          Assalamualaikum
         </h4>
+        <p class="font-poppins font-normal md:text-lg text-sm text-darkBlue">
+          Bagaimana kabarnya pakde, bude, om, tante, mas, mbak, dan adek-adek?
+          Semoga sehat semua yaa
+        </p>
         <p
-          class="animate-[slideInFromBottom_1s_ease-in-out_1s] font-poppins font-medium text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs py-4"
+          class="font-poppins font-normal md:text-lg text-sm py-4 text-darkBlue"
         >
-          Nanti kita bakal ngapain aja ya? Cek tabel rundownnya di bawah ya!
+          Wah, tidak terasa sudah tiba lagi momen Idul Fitri yang penuh berkah,
+          yang menandakan bahwa acara Halal Bi Halal kita pun semakin dekat.
+        </p> -->
+
+        <p
+          class="text-justify font-poppins font-normal md:text-lg text-sm text-darkBlue first-letter:text-6xl first-letter:me-2.5 first-letter:float-start first-letter:font-croissantOne first-letter:mt-1 leading-relaxed"
+        >
+          <span class="font-semibold">Assalamualaikum.</span> Bagaimana kabarnya
+          pakde, bude, om, tante, mas, mbak, dan adek-adek? Semoga sehat semua
+          yaa...
+        </p>
+        <p
+          class="text-justify font-poppins font-normal md:text-lg text-sm text-darkBlue mt-3"
+        >
+          Wah, tidak terasa sudah tiba lagi momen Idul Fitri yang penuh berkah,
+          yang menandakan bahwa acara Halal Bi Halal kita pun semakin dekat.
         </p>
       </div>
+    </div>
+
+    <div
+      class="md:py-24 md:px-12 px-4 py-8 flex flex-col justify-center items-center"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] text-darkBlue font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2 md:mb-16 mb-8"
+      >
+        Apa Kata Mereka
+      </h4>
+      <div class="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-4 max-sm:px-4">
+        <div
+          class="bg-white md:py-10 md:px-10 py-5 px-5 md:shadow-lg shadow rounded-md"
+        >
+          <div class="flex justify-center items-center mb-2">
+            <span
+              class="icon-[mdi--format-quote-close] text-vintage md:w-14 md:h-14 w-8 h-8"
+            ></span>
+          </div>
+          <p
+            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm mb-3"
+          >
+            Saya
+          </p>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-xs">
+            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
+          </p>
+        </div>
+
+        <div
+          class="bg-white md:py-10 md:px-10 py-5 px-5 md:shadow-lg shadow rounded-md"
+        >
+          <div class="flex justify-center items-center mb-2">
+            <span
+              class="icon-[mdi--format-quote-close] text-vintage md:w-14 md:h-14 w-8 h-8"
+            ></span>
+          </div>
+          <p
+            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm mb-3"
+          >
+            Saya
+          </p>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-xs">
+            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
+          </p>
+        </div>
+
+        <div
+          class="bg-white md:py-10 md:px-10 py-5 px-5 md:shadow-lg shadow rounded-md"
+        >
+          <div class="flex justify-center items-center mb-2">
+            <span
+              class="icon-[mdi--format-quote-close] text-vintage md:w-14 md:h-14 w-8 h-8"
+            ></span>
+          </div>
+          <p
+            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm mb-3"
+          >
+            Saya
+          </p>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-xs">
+            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
+    >
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+    </div>
+
+    <div
+      id="rundown"
+      class="md:py-16 md:px-12 px-4 py-8 flex flex-col justify-center items-center text-darkBlue"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2"
+      >
+        Susunan Acara
+      </h4>
+      <p
+        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-xs sm:text-xs py-4"
+      >
+        Nanti kita bakal ngapain aja ya? Cek tabel susunan acaranya di bawah ya!
+      </p>
       <div
-        class="flex lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap gap-x-12 gap-y-8 md:mt-12 sm:mt-6 mt-6 justify-center items-center"
+        class="flex lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap gap-x-12 gap-y-8 md:mt-8 md:mb-24 mt-6 mb-14 justify-center items-center"
       >
         <img
           src="assets/images/ketupat.png"
           alt=""
-          class="md:w-72 md:h-72 sm:w-48 sm:h-48 w-48 h-48 object-cover mt-6 left-0 sm:mx-auto md:mx-0 mx-auto"
+          class="md:w-72 md:h-72 sm:w-48 sm:h-48 w-48 h-48 object-cover mt-4 left-0 sm:mx-auto md:mx-0 mx-auto"
         />
         <!-- TIMELINE -->
         <div class="md:pl-6 sm:pl-4 pl-4">
@@ -172,7 +313,7 @@
             </div>
             <!-- Content -->
             <div
-              class="font-poppins font-normal text-babyBlue sm:text-xs text-xs md:text-base"
+              class="font-poppins font-normal text-mediumBlue sm:text-xs text-xs md:text-base"
             >
               Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
             </div>
@@ -196,7 +337,7 @@
             </div>
             <!-- Content -->
             <div
-              class="font-poppins font-normal text-babyBlue sm:text-xs text-xs md:text-base"
+              class="font-poppins font-normal text-mediumBlue sm:text-xs text-xs md:text-base"
             >
               Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
             </div>
@@ -220,7 +361,7 @@
             </div>
             <!-- Content -->
             <div
-              class="font-poppins font-normal text-babyBlue sm:text-xs text-xs md:text-base"
+              class="font-poppins font-normal text-mediumBlue sm:text-xs text-xs md:text-base"
             >
               Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
             </div>
@@ -244,78 +385,113 @@
             </div>
             <!-- Content -->
             <div
-              class="font-poppins font-normal text-babyBlue sm:text-xs text-xs md:text-base"
+              class="font-poppins font-normal text-mediumBlue sm:text-xs text-xs md:text-base"
             >
               Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- DIVIDER -->
-    <div
-      class="md:border-t-2 sm:border-t-0.5 border-t-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
-    ></div>
-    <!-- DRESSCODE -->
-    <div class="md:py-20 sm:py-12 py-12">
-      <h4
-        class="text-center font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg"
-      >
-        Dresscode
-      </h4>
-      <div
-        class="flex md:my-8 sm:my-4 my-4 md:px-48 px-6 justify-center items-center"
-      >
-        <p
-          class="font-poppins font-normal text-center text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs leading-loose"
+
+      <div class="text-center md:px-48">
+        <div class="flex justify-center items-center">
+          <img
+            src="assets/images/hanger.png"
+            class="w-auto md:h-8 h-5"
+            alt=""
+          />
+        </div>
+        <h4
+          class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne md:text-xl text-base md:mt-6 mt-5"
         >
-          Jangan lupa dresscodenya, ya! Untuk
-          <span class="font-semibold text-vintage"
+          Jangan lupa dresscodenya, ya!
+        </h4>
+        <p
+          class="font-poppins font-normal text-center text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs leading-normal py-4"
+        >
+          Untuk
+          <span class="font-medium text-vintage"
             >acara malam, pakai nuansa coklat muda</span
           >, dan untuk
-          <span class="font-semibold">acara pagi, pilih nuansa biru</span>. Biar
+          <span class="font-medium">acara pagi, pilih nuansa biru</span>. Biar
           semua serasi dan matching!
         </p>
       </div>
     </div>
-    <!-- DIVIDER -->
+
     <div
-      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
-    ></div>
-    <!-- TEMPAT -->
-    <div id="location" class="md:px-16 xl:px-24 md:pt-20 pt-12 sm:px-4 px-4">
-      <div class="text-center">
-        <h4
-          class="font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg"
-        >
-          Lokasi
-        </h4>
-        <p
-          class="font-poppins font-normal text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs py-4"
-        >
-          Penasaran dengan lokasinya kali ini? Ayo, kita akan berkumpul di
-          <span class="font-medium">Utama Raya Villa</span>
-        </p>
-      </div>
-      <div class="text-center md:my-10 sm:my-6 my-6">
-        <p
-          class="font-poppins font-medium text-mediumBlue bg-whiter rounded-lg py-3 px-5 w-fit flex mx-auto lg:text-lg md:text-base text-sm sm:text-sm"
-        >
-          Cek Google Maps
-        </p>
-      </div>
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
+    >
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
     </div>
 
-    <!-- SPESIFIKASI COTTAGE -->
-    <div class="md:px-16 xl:px-24 sm:px-6 px-6 md:pb-20 pb-12">
+    <div
+      id="location"
+      class="md:pt-16 md:px-12 px-4 pt-8 flex flex-col justify-center items-center text-darkBlue"
+    >
       <img
-        src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Map-of-a-top-view-by-AlexZel-580x386.jpg"
-        class="w-full object-cover lg:h-144 md:h-96 sm:h-64 h-64 border-0 rounded-md md:mb-12 mb-8"
+        src="assets/images/moon-half.png"
         alt=""
+        class="md:w-12 w-6 h-auto"
       />
-      <div class="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-10">
-        <div class="md:col-span-2 md:mb-0 sm:mb-3 mb-3">
-          <div class="md:mx-4 sm:mx-2 mx-2">
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2"
+      >
+        Lokasi
+      </h4>
+      <p
+        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-xs sm:text-xs py-4"
+      >
+        Penasaran dengan lokasinya kali ini? Ayo, kita akan berkumpul di Utama
+        Raya Villa! Kamu bisa cek lokasinya di Google Maps! Di bawah ini, kami
+        juga sertakan beberapa foto dari villa tersebut.
+      </p>
+      <div class="md:px-16">
+        <img
+          src="assets/images/pict-sample.png"
+          class="md:mt-4 mt-2 max-sm:h-40 object-cover"
+          alt=""
+        />
+        <div class="grid grid-cols-4 gap-x-1 md:gap-x-3">
+          <div>
+            <img
+              src="assets/images/pict-sample.png"
+              class="md:mt-4 mt-2 md:h-56 h-14 object-cover"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/pict-sample.png"
+              class="md:mt-4 mt-2 md:h-56 h-14 object-cover"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/pict-sample.png"
+              class="md:mt-4 mt-2 md:h-56 h-14 object-cover"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="assets/images/pict-sample.png"
+              class="md:mt-4 mt-2 md:h-56 h-14 object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-x-16 md:mt-12">
+        <div class="md:col-span-2 max-sm:px-4 max-sm:py-8">
+          <div>
             <p
               class="font-croissantOne text-mediumBlue lg:text-2xl md:text-xl text-base sm:text-base"
             >
@@ -330,7 +506,7 @@
           </div>
           <!-- Item spec 1 -->
 
-          <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+          <div class="md:py-0 sm:py-1 py-1">
             <p
               class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
             >
@@ -385,7 +561,7 @@
           <div
             class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
           ></div>
-          <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+          <div class="md:py-0 sm:py-1 py-1">
             <p
               class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
             >
@@ -440,7 +616,7 @@
           <div
             class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mb-5 md:mt-3 sm:mb-2 sm:mt-1 mb-2 mt-1"
           ></div>
-          <div class="md:mx-4 sm:mx-2 mx-2 md:py-0 sm:py-1 py-1">
+          <div class="md:py-0 sm:py-1 py-1">
             <p
               class="font-poppins md:font-semibold sm:font-medium font-medium text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
             >
@@ -493,8 +669,11 @@
           </div>
         </div>
         <!-- PENGHUNI -->
+        <!-- <div
+          class="bg-white md:shadow-xl shadow-md rounded-lg md:py-8 py-5 md:px-7 sm:px-7 px-5"
+        ></div> -->
         <div
-          class="bg-whiten rounded-lg md:px-7 md:py-8 sm:py-5 sm:px-7 py-5 px-5 h-fit"
+          class="bg-white md:shadow-xl shadow rounded-lg md:py-8 py-7 md:px-7 sm:px-7 px-7 h-fit max-sm:px-4"
         >
           <p
             class="font-croissantOne md:text-lg sm:text-base text-base text-mediumBlue md:mb-3 sm:mb-1 mb-1"
@@ -549,89 +728,94 @@
         </div>
       </div>
     </div>
-
-    <!-- DIVIDER -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010592.9692004513!2d112.14782345764026!3d-8.339631809792383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd71c607543752f%3A0xac76bd94926ed064!2sCottage%20Utama%20Raya!5e0!3m2!1sen!2sid!4v1709750097854!5m2!1sen!2sid"
+      class="w-full lg:h-144 h-96 border-0 md:py-20 py-12 md:mb-16 mb-8"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <div
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
+    >
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+    </div>
     <div
       id="contest"
-      class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
-    ></div>
-
-    <!-- LOMBA FOTO -->
-    <div class="md:px-16 xl:px-24 sm:px-4 px-4 md:py-20 py-12">
-      <div
-        class="flex lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap gap-x-24 gap-y-5 md:px-4 sm:px-2 px-2 sm:text-center text-center md:text-left md:mb-7 sm:mb-3 mb-3"
+      class="md:py-16 md:px-12 px-4 py-8 flex flex-col justify-center items-center text-darkBlue"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2"
       >
-        <div class="sm:mx-auto md:mx-0 mx-auto md:mb-8 mb-3">
-          <h4
-            class="font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg md:mb-8 sm:mb-7 mb-7"
-          >
-            Lomba Foto
-          </h4>
-          <p
-            class="font-poppins font-normal text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
-          >
-            Di acara nanti, akan ada lomba foto yang seru! <br />Ayo, tunjukkan
-            kreativitasmu dan tangkap momen indah bersama keluarga. Tersedia
-            hadiah menarik untuk foto terbaik.
+        Lomba Foto
+      </h4>
+      <p
+        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-xs sm:text-xs py-4 md:px-8"
+      >
+        Di acara nanti, akan ada lomba foto yang seru! Ayo, tunjukkan
+        kreativitasmu dan tangkap momen indah bersama keluarga dalam tema
+        kekeluargaan, Idul Fitri, hari raya, dan silaturahmi. Tersedia hadiah
+        menarik untuk foto terbaik
+      </p>
+      <img
+        src="assets/images/camera.png"
+        alt=""
+        class="md:w-60 md:h-60 sm:w-36 sm:h-36 w-36 h-36 object-contain my-4"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne md:text-2xl text-base py-6"
+      >
+        Tema Foto
+      </h4>
+      <div class="grid md:grid-cols-4 grid-cols-2 md:gap-12 gap-4">
+        <div
+          class="bg-whiter md:py-10 md:px-10 py-5 px-5 rounded-2xl rounded-tl-none rounded-br-none text-center"
+        >
+          <span class="icon-[mdi--family] md:w-10 md:h-10 w-8 h-8 mb-2"></span>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+            Kekeluargaan
           </p>
         </div>
-        <img
-          src="assets/images/camera.png"
-          alt=""
-          class="md:w-60 md:h-60 sm:w-36 sm:h-36 w-36 h-36 object-contain left-0 sm:mx-auto md:mx-0 mx-auto"
-        />
-      </div>
-      <div
-        class="md:py-12 py-5 md:px-24 px-3 border-dashed rounded-lg md:border-3.5 sm:border-2 border-2 border-lightVintage md:mx-4 mx-2 md:my-12 my-6"
-      >
-        <p
-          class="font-poppins text-center md:font-semibold sm:font-medium font-medium text-mediumBlue lg:text-xl md:text-lg text-sm sm:text-sm sm:mb-4 md:mb-8 mb-4"
-        >
-          Tema Lomba
-        </p>
         <div
-          class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-y-5 sm:gap-y-3 gap-y-3 md:gap-x-12 sm:gap-x-2 gap-x-2"
+          class="bg-whiter md:py-10 md:px-10 py-5 px-5 rounded-2xl rounded-tl-none rounded-br-none text-center"
         >
-          <div
-            class="md:px-4 sm:px-2 px-2 md:py-2 sm:py-1 py-1 bg-whiten rounded-md text-center"
-          >
-            <p
-              class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-            >
-              Kekeluargaan
-            </p>
-          </div>
-          <div
-            class="md:px-4 sm:px-2 px-2 md:py-2 sm:py-1 py-1 bg-whiten rounded-md text-center"
-          >
-            <p
-              class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-            >
-              Idul Fitri
-            </p>
-          </div>
-          <div
-            class="md:px-4 sm:px-2 px-2 md:py-2 sm:py-1 py-1 bg-whiten rounded-md text-center"
-          >
-            <p
-              class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-            >
-              Hari Raya
-            </p>
-          </div>
-          <div
-            class="md:px-4 sm:px-2 px-2 md:py-2 sm:py-1 py-1 bg-whiten rounded-md text-center"
-          >
-            <p
-              class="font-poppins font-normal md:text-base sm:text-xs text-xs text-babyBlue"
-            >
-              Silaturahmi
-            </p>
-          </div>
+          <span
+            class="icon-[mdi--religion-islamic] md:w-10 md:h-10 w-8 h-8 mb-2"
+          ></span>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+            Hari Raya
+          </p>
+        </div>
+        <div
+          class="bg-whiter md:py-10 md:px-10 py-5 px-5 rounded-2xl rounded-tl-none rounded-br-none text-center"
+        >
+          <span class="icon-[mdi--family] md:w-10 md:h-10 w-8 h-8 mb-2"></span>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+            Idul Fitri
+          </p>
+        </div>
+        <div
+          class="bg-whiter md:py-10 md:px-10 py-5 px-5 rounded-2xl rounded-tl-none rounded-br-none text-center"
+        >
+          <span class="icon-[mdi--family] md:w-10 md:h-10 w-8 h-8 mb-2"></span>
+          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
+            Silaturahmi
+          </p>
         </div>
       </div>
       <p
-        class="font-poppins text-center font-medium text-mediumBlue lg:text-xl md:text-lg text-xs md:mb-6 mb-6 mt-8 leading-relaxed"
+        class="font-poppins text-center font-medium text-mediumBlue lg:text-xl md:text-lg text-xs md:mb-6 mb-4 mt-12 leading-relaxed"
       >
         Kirim foto-fotomu melalui link pengumpulan di bawah ini. Jangan lupa
         untuk menangkap momen yang spesial!
@@ -644,239 +828,330 @@
         ></span>
         <a
           href="#"
-          class="font-poppins font-normal md:text-base sm:text-xs text-xs text-greyishBlue"
+          class="font-poppins font-medium md:text-base sm:text-xs text-xs text-greyishBlue"
         >
           https://bit.ly/PengumpulanFoto
         </a>
       </div>
     </div>
+
     <div
-      class="bg-[url('../assets/images/accent.png')] md:h-screen sm:h-48 h-48 w-full bg-cover md:pt-56 pt-24"
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
     >
-      <!-- GALERI -->
-      <div
-        id="gallery"
-        class="md:px-20 xl:px-24 md:pt-16 sm:pt-6 sm:px-6 pt-6 px-6 text-center md:mb-8 sm:mb-4 mb-4"
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+    </div>
+    <div
+      id="gallery"
+      class="md:py-16 md:px-12 px-4 py-8 flex flex-col justify-center items-center text-darkBlue"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2"
       >
-        <h4
-          class="font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg underline underline-offset-16 decoration-dashed decoration-vintage mb-6"
-        >
-          Memori Tahun Lalu
-        </h4>
-        <p
-          class="font-poppins font-normal text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs lg:px-48 md:px-24"
-        >
-          Kangen momen-momen Halal Bihalal kita tahun lalu?
-        </p>
-      </div>
-      <div class="container mx-auto px-8 py-2 lg:px-48">
-        <div class="-m-1 flex flex-wrap md:-m-2">
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
-              />
-            </div>
-          </div>
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
-              />
-            </div>
-          </div>
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
-              />
-            </div>
-          </div>
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
-              />
-            </div>
-          </div>
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
-              />
-            </div>
-          </div>
-          <div class="flex md:w-1/3 w-1/2 flex-wrap">
-            <div class="w-full p-1 md:p-2">
-              <img
-                alt="gallery"
-                class="block h-full w-full rounded-sm object-cover object-center"
-                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- DIVIDER -->
+        Memori
+      </h4>
+      <p
+        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-xs sm:text-xs py-4"
+      >
+        Kangen momen-momen Halal Bihalal kita tahun lalu?
+      </p>
       <div
-        class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mt-20 mt-12 md:mx-16 sm:mx-6 mx-6"
-      ></div>
-      <div class="md:px-16 xl:px-24 md:py-20 py-12 sm:px-8 px-8">
+        class="grid md:grid-cols-4 grid-cols-2 gap-2 md:px-16 px-0 md:mt-4 mt-2"
+      >
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+        <img
+          src="https://smarthistory.org/wp-content/uploads/2023/07/dezoomify-result-27-scaled.jpg"
+          class="object-cover md:h-72 h-full w-full rounded"
+          alt=""
+        />
+      </div>
+      <p
+        class="font-poppins text-center font-normal text-mediumBlue lg:text-xl md:text-lg text-xs md:mb-6 mb-1 md:mt-20 mt-10 leading-relaxed"
+      >
+        Ayo, cek galeri foto di Google Drive!
+      </p>
+      <a
+        class="font-poppins text-center font-semibold text-mediumBlue lg:text-xl md:text-lg text-xs underline underline-offset-2 cursor-pointer"
+      >
+        Halal Bihalal KB Abdullah Salam 2023
+      </a>
+    </div>
+
+    <div
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
+    >
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+    </div>
+    <div class="md:py-16 md:px-12 px-4 py-8 text-darkBlue">
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="assets/images/moon-half.png"
+          alt=""
+          class="md:w-12 w-6 h-auto"
+        />
         <h4
-          class="font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg underline underline-offset-16 decoration-dashed decoration-vintage mb-12 text-center"
+          class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2"
         >
           Reels
         </h4>
-
-        <div
-          class="flex md:justify-center overflow-x-auto gap-4 snap-x snap-mandatory"
-        >
-          <div class="shrink-0 snap-center">
-            <div class="w-full">
-              <iframe
-                class="rounded-xl h-112"
-                src="https://www.youtube.com/embed/r9jwGansp1E"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+      </div>
+      <div
+        class="flex md:justify-center overflow-x-auto gap-4 snap-x snap-mandatory md:mt-16 mt-8"
+      >
+        <div class="shrink-0 snap-center">
+          <div class="w-full">
+            <iframe
+              class="rounded-xl h-112"
+              src="https://www.youtube.com/embed/r9jwGansp1E"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="shrink-0 snap-center">
-            <div class="w-full">
-              <iframe
-                class="rounded-xl h-112"
-                src="https://www.youtube.com/embed/r9jwGansp1E"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+        </div>
+        <div class="shrink-0 snap-center">
+          <div class="w-full">
+            <iframe
+              class="rounded-xl h-112"
+              src="https://www.youtube.com/embed/r9jwGansp1E"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
+    </div>
 
-      <audio id="backgroundMusic" autoplay loop class="hidden">
-        <source src="assets/musics/rainy-day.m4a" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
-
-      <form class="form">
-        <input type="text" id="username" placeholder="Nama lengkap" />
-        <input type="text" id="ucapan" placeholder="Ucapan" />
-        <button type="submit">Kirim</button>
-      </form>
-      <!-- CLOSING -->
+    <div
+      class="flex justify-center items-center md:py-28 md:px-12 px-4 py-12 md:gap-10 gap-5"
+    >
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+      <img
+        src="assets/images/decor-full.png"
+        alt=""
+        class="md:w-64 md:h-64 h-32 w-32"
+      />
+      <div class="border-b-0.5 border-solid border-gray-300 w-full"></div>
+    </div>
+    <div
+      class="md:py-16 md:px-12 px-4 py-8 text-darkBlue flex flex-col justify-center items-center"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2 md:mb-10 mb-5"
+      >
+        Kirim Ucapan
+      </h4>
       <div
-        class="md:border-b-2 sm:border-b-0.5 border-b-0.5 border-slate-300 md:mx-16 sm:mx-6 mx-6"
-      ></div>
-      <div class="md:px-16 xl:px-24 md:py-20 py-12 sm:px-8 px-8">
-        <h4
-          class="font-croissantOne text-mediumBlue lg:text-3xl sm:text-lg md:text-2xl text-lg md:mb-12 mb-12 text-center"
+        class="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 max-sm:w-full max-sm:px-4"
+      >
+        <div
+          class="bg-white md:py-10 md:px-10 py-5 px-5 md:shadow-lg shadow rounded-md md:h-112"
         >
-          Hitung Mundur
-        </h4>
-        <div class="flex justify-center md:gap-20 gap-8 text-center">
-          <div>
-            <h4
-              id="days"
-              class="font-poppins md:font-semibold font-medium text-vintage md:text-6xl text-3xl md:mb-2 mb-0"
-            >
-              20
+          <form class="form mx-auto">
+            <h4 class="font-poppins font-semibold md:text-lg text-base mb-6">
+              Form Ucapan
             </h4>
-            <p
-              class="font-poppins md:font-normal font-light text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
+            <div class="mb-5">
+              <label
+                for="username"
+                class="text-darkBlue block mb-3 font-poppins font-medium md:text-sm text-xs sm:text-xs"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                id="username"
+                class="bg-gray-100 border-0 text-gray-900 rounded-lg block w-full md:px-6 md:py-3 px-4 py-3 md:text-sm text-xs focus:border-0 focus:ring-0 font-poppins font-normal placeholder:font-light"
+                placeholder="Masukkan nama lengkap"
+                required
+              />
+            </div>
+            <div class="mb-5">
+              <label
+                for="ucapan"
+                class="text-darkBlue block mb-3 font-poppins font-medium md:text-sm text-xs sm:text-xs"
+                >Ucapan</label
+              >
+              <textarea
+                name=""
+                id="ucapan"
+                cols="30"
+                rows="5"
+                class="bg-gray-100 border-0 text-gray-900 rounded-lg block w-full md:px-6 md:py-3 px-4 py-3 md:text-sm text-xs focus:border-0 focus:ring-0 font-poppins font-normal"
+              >
+              </textarea>
+            </div>
+            <button
+              type="submit"
+              class="float-end bg-mediumBlue rounded-xl font-poppins text-white font-normal text-xs mx-auto px-5 py-2.5 hover:bg-greyishBlue"
             >
-              Hari
-            </p>
-          </div>
-          <div>
-            <h4
-              id="hours"
-              class="font-poppins md:font-semibold font-medium text-vintage md:text-6xl text-3xl md:mb-2 mb-0"
-            >
-              16
-            </h4>
-            <p
-              class="font-poppins md:font-normal font-light text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
-            >
-              Jam
-            </p>
-          </div>
-          <div>
-            <h4
-              id="minutes"
-              class="font-poppins md:font-semibold font-medium text-vintage md:text-6xl text-3xl md:mb-2 mb-0"
-            >
-              36
-            </h4>
-            <p
-              class="font-poppins md:font-normal font-light text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
-            >
-              Menit
-            </p>
-          </div>
-          <div>
-            <h4
-              id="seconds"
-              class="font-poppins md:font-semibold font-medium text-vintage md:text-6xl text-3xl md:mb-2 mb-0"
-            >
-              20
-            </h4>
-            <p
-              class="font-poppins md:font-normal font-light text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
-            >
-              Detik
-            </p>
-          </div>
+              Submit
+            </button>
+          </form>
         </div>
-        <div class="md:pt-12 pt-12">
+        <div
+          id="chats"
+          class="bg-white md:py-10 md:px-10 py-5 px-5 md:shadow-lg shadow rounded-md h-112 overflow-y-scroll"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      class="md:py-24 md:px-12 px-4 py-16 text-darkBlue flex flex-col justify-center items-center"
+    >
+      <img
+        src="assets/images/moon-half.png"
+        alt=""
+        class="md:w-12 w-6 h-auto"
+      />
+      <h4
+        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-lg md:mt-4 mt-2 md:mb-10 mb-5"
+      >
+        Hitung Mundur
+      </h4>
+      <div class="flex justify-center md:gap-20 gap-8 text-center">
+        <div>
           <h4
-            class="font-croissantOne text-vintage lg:text-xl sm:text-sm text-sm text-center md:mb-6 mb-2 md:px-0 leading-relaxed"
+            id="days"
+            class="font-croissantOne text-darkBlue md:text-6xl text-4xl mb-2"
           >
-            Jangan lupa datang ya... sampai ketemu di hari H!
+            20
           </h4>
           <p
-            class="font-poppins md:font-medium font-normal text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs text-center mb-6 leading-relaxed"
+            class="bg-lightVintage px-4 rounded-full font-poppins font-medium text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
           >
-            Jangan lupa juga untuk follow akun IG resmi kami
-            <span class="font-medium">@KBAbdullahSalam</span> untuk update-info
-            lebih lanjut!
+            Hari
           </p>
-          <div
-            class="flex mx-auto rounded-lg md:border-2 sm:border-0.5 border-0.5 border-greyishBlue md:py-4 md:px-6 sm:py-1 sm:px-5 py-2 px-3 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2"
+        </div>
+        <div>
+          <h4
+            id="hours"
+            class="font-croissantOne text-darkBlue md:text-6xl text-4xl mb-2"
           >
-            <span
-              class="icon-[mdi--instagram] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-greyishBlue"
-            ></span>
-            <a
-              href="#"
-              class="font-poppins font-normal md:text-base sm:text-xs text-xs text-greyishBlue md:pr-10 pr-3"
-            >
-              Instagram
-            </a>
-            <span
-              class="icon-[mdi--arrow-top-right] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-greyishBlue"
-            ></span>
-          </div>
+            16
+          </h4>
+          <p
+            class="bg-lightVintage px-4 rounded-full font-poppins font-medium text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
+          >
+            Jam
+          </p>
+        </div>
+        <div>
+          <h4
+            id="minutes"
+            class="font-croissantOne text-darkBlue md:text-6xl text-4xl mb-2"
+          >
+            36
+          </h4>
+          <p
+            class="bg-lightVintage px-4 rounded-full font-poppins font-medium text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
+          >
+            Menit
+          </p>
+        </div>
+        <div>
+          <h4
+            id="seconds"
+            class="font-croissantOne text-darkBlue md:text-6xl text-4xl mb-2"
+          >
+            20
+          </h4>
+          <p
+            class="bg-lightVintage px-4 rounded-full font-poppins font-medium text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs"
+          >
+            Detik
+          </p>
         </div>
       </div>
-      <img
-        src="assets/images/land-illustration.png"
-        alt=""
-        class="w-full object-cover h-64"
-      />
+      <div class="md:pt-16 pt-12">
+        <h4
+          class="font-croissantOne text-vintage lg:text-xl sm:text-sm text-sm text-center md:mb-6 mb-6 md:px-0 leading-relaxed"
+        >
+          Jangan lupa datang ya... <br class="md:hidden" />
+          Sampai ketemu di hari H!
+        </h4>
+        <p
+          class="font-poppins md:font-medium font-normal text-mediumBlue lg:text-lg md:text-base text-xs sm:text-xs text-center mb-6 leading-relaxed"
+        >
+          Jangan lupa juga untuk follow akun IG resmi kami
+          <span class="font-medium">@KBAbdullahSalam</span> untuk update-info
+          lebih lanjut!
+        </p>
+        <div
+          class="flex mx-auto rounded-lg md:border-2 sm:border-0.5 border-0.5 border-greyishBlue md:py-3 md:px-3 sm:py-1 sm:px-5 py-2 px-3 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 cursor-pointer"
+        >
+          <span
+            class="icon-[mdi--instagram] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-greyishBlue"
+          ></span>
+          <a
+            href="#"
+            class="font-poppins font-normal md:text-base sm:text-xs text-xs text-greyishBlue md:pr-10 pr-3"
+          >
+            Instagram
+          </a>
+          <span
+            class="icon-[mdi--arrow-top-right] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-greyishBlue"
+          ></span>
+        </div>
+      </div>
     </div>
+
+    <img
+      src="assets/images/land-illustration.png"
+      alt=""
+      class="w-full object-cover h-64"
+    />
+
+    <audio autoplay loop id="backgroundMusic" class="hidden">
+      <source src="assets/musics/ramadhan.m4a" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
     <!-- NAVBAR -->
     <div class="fixed bottom-0 flex justify-center inset-x-0 z-50">
       <div
@@ -905,7 +1180,7 @@
               class="icon-[mdi--location-on-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
             ></span>
             <p class="font-poppins md:text-sm text-xs text-mediumBlue">
-              Tempat
+              Lokasi
             </p>
           </a>
           <a href="#contest" class="text-center py-1 nav-link">
@@ -919,7 +1194,7 @@
               class="icon-[mdi--image-outline] md:w-5 md:h-5 w-4 h-4 text-mediumBlue"
             ></span>
             <p class="font-poppins md:text-sm text-xs text-mediumBlue">
-              Galeri
+              Memori
             </p>
           </a>
         </div>

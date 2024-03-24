@@ -51,12 +51,12 @@ fetch("https://jalanjalin-api.onrender.com/all_greetings")
       const dateString = chat.datetime;
       const date = moment(dateString);
       const formattedDate = date.format("DD MMM YYYY HH:mm");
-      chats += `<div class="item-chat flex justify-start gap-2.5 mb-5">
+      chats += `<div class="font-poppins item-chat flex justify-start gap-2.5 mb-5">
           <div
-            class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 bg-whiten rounded-e-xl rounded-es-xl"
+            class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 bg-whiten shadow rounded-e-xl rounded-es-xl"
           >
             <div class="flex items-center space-x-2 rtl:space-x-reverse">
-              <span class="text-sm font-semibold text-gray-900 dark:text-white"
+              <span class="font-croissantOne text-sm text-gray-900 dark:text-white"
                 >${chat.name}</span
               >
               <span class="text-sm font-normal text-gray-500 dark:text-gray-400"
@@ -98,4 +98,19 @@ formGreeting.addEventListener("submit", (event) => {
       console.error("Error:", error);
       // Display error message or handle error gracefully
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backgroundMusic = document.getElementById("backgroundMusic");
+  const toggleButton = document.getElementById("toggleMusic");
+
+  toggleButton.addEventListener("click", function () {
+    if (backgroundMusic.paused) {
+      backgroundMusic.play();
+      toggleButton.classList.add("animate-spin");
+    } else {
+      backgroundMusic.pause();
+      toggleButton.classList.remove("animate-spin");
+    }
+  });
 });

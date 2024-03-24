@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         whiten: "#F4F5F7",
         whiter: "#F0F1F4",
+        extraLightVintage: "#FBFAF7",
         lightVintage: "#E7DFD0",
         vintage: "#9A8354",
         darkBlue: "#08182F",
@@ -36,6 +37,13 @@ module.exports = {
         5: "5px",
       },
       height: {
+        112: "28rem",
+        128: "32rem",
+        144: "36rem",
+        168: "42rem",
+      },
+      width: {
+        100: "26rem",
         112: "28rem",
         128: "32rem",
         144: "36rem",
