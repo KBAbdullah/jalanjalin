@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
     />
+    <script
+      defer
+      src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
+    ></script>
   </head>
   <body class="bg-white">
     <audio autoplay loop id="backgroundMusic">
@@ -25,7 +29,7 @@
           <div class="flex">
             <img
               src="assets/images/decor-left.png"
-              class="animate-[slideInFromTop_2s_ease-in-out] absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_1s_ease-in-out] absolute left-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -47,7 +51,7 @@
             />
             <img
               src="assets/images/decor-right.png"
-              class="animate-[slideInFromTop_2s_ease-in-out] absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
+              class="animate-[slideInFromTop_1s_ease-in-out] absolute right-0 top-0 md:w-64 md:h-64 w-40 h-40"
               alt=""
             />
             <img
@@ -62,26 +66,26 @@
           <div class="md:hidden flex justify-center mb-8">
             <img
               src="assets/images/lantern.png"
-              class="animate-[fadeIn_2s_ease-in-out] w-5 h-fit"
+              class="animate-[fadeIn_1s_ease-in-out] w-5 h-fit"
               alt=""
             />
           </div>
           <div class="flex justify-center">
             <div
-              class="animate-[slideInFromLeft_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
+              class="animate-[slideInFromLeft_1s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 md:my-4 my-3"
             ></div>
             <h4
-              class="animate-[slideInFromTop_2s_ease-in-out] font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
+              class="animate-[slideInFromTop_1s_ease-in-out] font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider mb-2"
             >
               HALAL BIHALAL
             </h4>
             <div
-              class="animate-[slideInFromRight_2s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"
+              class="animate-[slideInFromRight_1s_ease-in-out] border-t-2 border-vintage md:w-6 w-3 mx-3 my-4"
             ></div>
           </div>
 
           <div
-            class="animate-[slideInFromLeft_2s_ease-in-out] flex justify-center gap-2 items-center my-2"
+            class="animate-[slideInFromLeft_1s_ease-in-out] flex justify-center gap-2 items-center my-2"
           >
             <h4 class="font-croissantOne md:text-4xl text-xl text-mediumBlue">
               Jalan
@@ -92,7 +96,7 @@
           </div>
 
           <div
-            class="animate-[slideInFromRight_2s_ease-in-out] flex justify-center gap-2 items-center md:mb-4 mb-2"
+            class="animate-[slideInFromRight_1s_ease-in-out] flex justify-center gap-2 items-center md:mb-4 mb-2"
           >
             <h4 class="font-croissantOne md:text-8xl text-5xl text-mediumBlue">
               Jalin
@@ -105,13 +109,13 @@
           </div>
 
           <h4
-            class="animate-[slideInFromBottom_2s_ease-in-out] text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
+            class="animate-[slideInFromBottom_1s_ease-in-out] text-center font-poppins font-medium md:text-2xl text-base text-vintage tracking-wider my-3"
           >
             KELUARGA BESAR ABDULLAH SALAM
           </h4>
 
           <div
-            class="animate-[slideInFromBottom_2s_ease-in-out] flex justify-center items-center mt-4 mb-8 mr-4"
+            class="animate-[slideInFromBottom_1s_ease-in-out] flex justify-center items-center mt-4 mb-8 mr-4"
           >
             <div class="text-right py-2 md:px-6 px-4 tracking-wider">
               <p
@@ -149,18 +153,20 @@
       </div>
 
       <div
-        class="animate-[slideInFromBottom_2s_ease-in-out] flex-grow relative"
+        class="animate-[slideInFromBottom_1s_ease-in-out] flex-grow relative"
       >
         <img
           id="responsive-image"
           src="assets/images/mosque-illustration-small.png"
-          class="animate-in slide-in-from-bottom duration-2s md:hidden object-cover w-full h-fit absolute bottom-0"
+          class="animate-in slide-in-from-bottom duration-1s md:hidden object-cover w-full h-fit absolute bottom-0"
           alt=""
         />
       </div>
     </div>
 
-    <div class="flex justify-between">
+    <div
+      class="transition-all opacity-0 intersect:animate-[slideInFromTop_1s_ease-in-out] intersect:opacity-100 flex justify-between"
+    >
       <img
         src="assets/images/decor-left.png"
         class="md:hidden absolute left-0 md:w-64 md:h-64 w-40 h-40"
@@ -184,14 +190,14 @@
         class="md:w-12 w-6 h-auto md:mb-10 mb-5"
       />
       <p
-        class="text-justify font-poppins font-normal md:text-xl text-sm text-darkBlue first-letter:text-6xl first-letter:me-2.5 first-letter:float-start first-letter:font-croissantOne first-letter:mt-1 leading-relaxed"
+        class="opacity-0 transition-all intersect:opacity-100 duration-1000 text-justify font-poppins font-normal md:text-xl text-sm text-darkBlue first-letter:text-6xl first-letter:me-2.5 first-letter:float-start first-letter:font-croissantOne first-letter:mt-1 leading-relaxed"
       >
         <span class="font-semibold">Assalamualaikum.</span> Bagaimana kabarnya
         pakde, bude, om, tante, mas, mbak, dan adek-adek? Semoga sehat semua
         yaa...
       </p>
       <p
-        class="text-justify font-poppins font-normal md:text-xl text-sm text-darkBlue md:mt-5 mt-3 leading-relaxed"
+        class="opacity-0 transition-all intersect:opacity-100 duration-1000 text-justify font-poppins font-normal md:text-xl text-sm text-darkBlue md:mt-5 mt-3 leading-relaxed"
       >
         Wah, tidak terasa sudah tiba lagi momen Idul Fitri yang penuh berkah,
         yang menandakan bahwa acara Halal Bi Halal kita pun semakin dekat.
@@ -202,56 +208,14 @@
       class="md:pt-12 md:pb-24 py-16 md:px-16 px-4 flex flex-col justify-center items-center"
     >
       <h4
-        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-xl md:mb-12 mb-6"
+        class="font-croissantOne lg:text-3xl md:text-xl text-xl md:mb-12 mb-6"
       >
         Apa kata mereka
       </h4>
       <div
-        class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 max-sm:px-4 max-sm:w-full"
+        class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 duration-1000 grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 max-sm:px-4 max-sm:w-full"
         id="greeting-chats"
-      >
-        <!-- <div
-          class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
-        >
-          <div class="flex gap-x-4">
-            <p
-              class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
-            >
-              Saya
-            </p>
-            <span class="font-poppins text-sm font-normal text-vintage"
-              >23 Mar 10.00</span
-            >
-          </div>
-          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
-            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
-          </p>
-        </div>
-        <div
-          class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
-        >
-          <p
-            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
-          >
-            Saya
-          </p>
-          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
-            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
-          </p>
-        </div>
-        <div
-          class="bg-lightVintage md:py-10 md:px-10 py-4 px-4 md:shadow-lg shadow rounded-2xl rounded-tl-none"
-        >
-          <p
-            class="font-poppins font-semibold text-darkBlue md:text-lg text-sm pt-0 pb-1"
-          >
-            Saya
-          </p>
-          <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
-            Semoga acaranya lancar selalu dan kita bisa kumpul lagi tahun depan
-          </p>
-        </div> -->
-      </div>
+      ></div>
     </div>
 
     <div
@@ -276,12 +240,12 @@
         class="md:w-12 w-6 h-auto"
       />
       <h4
-        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2"
+        class="font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2"
       >
         Susunan Acara
       </h4>
       <p
-        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-sm sm:text-sm py-4"
+        class="text-center font-poppins font-normal lg:text-lg md:text-base text-sm sm:text-sm py-4"
       >
         Nanti kita bakal ngapain aja ya? Cek tabel susunan acaranya di bawah ya!
       </p>
@@ -295,7 +259,9 @@
         /> -->
         <!-- TIMELINE -->
         <div>
-          <div class="md:pl-6 sm:pl-4 pl-4">
+          <div
+            class="opacity-0 transition-all intersect:opacity-100 duration-1000 md:pl-6 sm:pl-4 pl-4"
+          >
             <p
               class="font-poppins font-semibold text-darkBlue text-base md:text-lg mb-2"
             >
@@ -340,7 +306,7 @@
               <div
                 class="font-poppins font-normal text-mediumBlue sm:text-sm text-sm md:text-base"
               >
-                Pengajian keluarga berkumpul di Villa 27 dilanjutkan makan
+                Pengajian keluarga berkumpul di Cottage 27 dilanjutkan makan
                 bersama.
               </div>
             </div>
@@ -366,7 +332,9 @@
           </div>
 
           <!-- TIMELINE -->
-          <div class="md:pl-6 sm:pl-4 pl-4 md:mt-10 mt-8">
+          <div
+            class="opacity-0 transition-all intersect:opacity-100 duration-1000 md:pl-6 sm:pl-4 pl-4 md:mt-10 mt-8"
+          >
             <p
               class="font-poppins font-semibold text-darkBlue text-base md:text-lg mb-2"
             >
@@ -387,7 +355,7 @@
               <div
                 class="font-poppins font-normal text-mediumBlue sm:text-sm text-sm md:text-base"
               >
-                Jalan sehat bersama start dari halaman depan Villa 27
+                Jalan sehat bersama start dari halaman depan Cottage 27
               </div>
             </div>
             <!-- Item #5 -->
@@ -405,7 +373,7 @@
               <div
                 class="font-poppins font-normal text-mediumBlue sm:text-sm text-sm md:text-base"
               >
-                Permainan Keluarga
+                Permainan bersama keluarga
               </div>
             </div>
 
@@ -424,7 +392,7 @@
               <div
                 class="font-poppins font-normal text-mediumBlue sm:text-sm text-sm md:text-base"
               >
-                Sarapan bersama di Villa 27
+                Sarapan bersama di Cottage 27
               </div>
             </div>
 
@@ -462,14 +430,16 @@
               <div
                 class="font-poppins font-normal text-mediumBlue sm:text-sm text-sm md:text-base"
               >
-                Acara Selesai, <i>check out</i> (keluar) dari kamar
+                Acara Selesai, <i>check out</i> (keluar) dari Cottage
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="text-center md:px-48">
+      <div
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 text-center md:px-48"
+      >
         <!-- <div class="flex justify-center items-center">
           <img
             src="assets/images/hanger.png"
@@ -478,27 +448,34 @@
           />
         </div> -->
         <h4
-          class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne md:text-2xl text-lg md:mt-6 mt-5 mb-3"
+          class="text-darkBlue font-croissantOne md:text-2xl text-lg md:mt-6 mt-5 mb-3"
         >
           Tema Pakaian
         </h4>
+        <div class="mt-5 px-5 text-mediumBlue">
+          <p class="font-poppins font-semibold md:text-lg text-base">
+            Acara pagi
+          </p>
+          <p class="font-poppins md:text-lg text-sm mt-2">
+            Atasan putih, bawahan dan kerudung (untuk wanita)
+            <span class="font-semibold">bernuansa biru</span>
+            (boleh bahan kaos, katun, atau jeans)
+          </p>
+        </div>
+        <div class="mt-5 px-5 text-mediumBlue">
+          <p class="font-poppins font-semibold md:text-lg text-base">
+            Acara malam
+          </p>
+          <p class="font-poppins md:text-lg text-sm mt-2">
+            Untuk wanita, baju hitam dan
+            <span class="font-semibold text-vintage"
+              >kerudung coksu (coklat susu)</span
+            >. Untuk pria, kombinasi hitam-coksu atau putih-coksu.
+          </p>
+        </div>
         <p
-          class="font-poppins font-normal text-center text-mediumBlue lg:text-lg md:text-base text-sm sm:text-sm leading-normal py-4"
+          class="font-poppins text-mediumBlue font-medium md:text-lg text-sm mt-5"
         >
-          Untuk
-          <span class="font-medium text-vintage">acara malam, </span
-          ><span class="md:text-lg text-base font-bold text-vintage"
-            >nuansa coklat muda.</span
-          >
-          <br />
-          <span class="font-medium"
-            >dan acara pagi,
-            <span class="md:text-lg text-base font-bold"
-              >nuansa biru.</span
-            ></span
-          >
-        </p>
-        <p class="font-poppins md:text-lg text-sm mt-5">
           Jangan lupa disesuaikan yaa <br />
           agar semua serasi dan matching!
         </p>
@@ -527,12 +504,12 @@
         class="md:w-12 w-6 h-auto"
       />
       <h4
-        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-3xl text-2xl md:mt-4 mt-2"
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 font-croissantOne lg:text-3xl md:text-3xl text-2xl md:mt-4 mt-2"
       >
         Lokasi
       </h4>
       <p
-        class="text-center text-vintage font-poppins font-semibold md:text-xl text-lg py-4 tracking-wider"
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 text-center text-vintage font-poppins font-semibold md:text-xl text-lg py-4 tracking-wider"
       >
         VILLA UTAMA RAYA
       </p>
@@ -547,7 +524,7 @@
           >
             <img
               src="assets/images/halal_bihalal_3.jpg"
-              class="md:w-100 md:h-64 w-88 h-56 object-cover rounded-md"
+              class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 md:w-100 md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -560,7 +537,7 @@
           >
             <img
               src="assets/images/halal_bihalal_1.jpg"
-              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
+              class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -573,7 +550,7 @@
           >
             <img
               src="assets/images/halal_bihalal_2.jpg"
-              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
+              class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -586,7 +563,7 @@
           >
             <img
               src="assets/images/halal_bihalal_4.jpg"
-              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
+              class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
@@ -599,65 +576,67 @@
           >
             <img
               src="assets/images/halal_bihalal_5.jpg"
-              class="md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
+              class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 md:w-full md:h-64 w-88 h-56 object-cover rounded-md"
               alt=""
             />
           </a>
         </div>
       </div>
       <div class="grid md:grid-cols-3 grid-cols-1 gap-x-16 md:mt-12">
-        <div class="md:col-span-2 max-sm:px-2 max-sm:py-8">
+        <div
+          class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 md:col-span-2 max-sm:px-2 max-sm:py-8"
+        >
           <p
             class="font-croissantOne text-mediumBlue lg:text-2xl md:text-xl text-lg sm:text-base mb-4"
           >
-            Fasilitas Villa
+            Fasilitas Cottage
           </p>
           <!-- Item spec 1 -->
           <div class="md:py-0">
             <p
-              class="font-poppins md:font-semibold font-semibold text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+              class="font-poppins md:font-semibold font-semibold text-mediumBlue lg:text-lg md:text-base text-base"
             >
-              Villa 15
+              Cottage 15
             </p>
             <div
               class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
             >
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   3 Kamar tidur
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--kitchen-counter-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--kitchen-counter-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Dapur
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--living-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--living-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Ruang tamu
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--bathroom] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--bathroom] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Kamar mandi dalam
                 </p>
@@ -670,49 +649,49 @@
           ></div>
           <div class="md:py-0 sm:py-1 py-1">
             <p
-              class="font-poppins md:font-semibold font-semibold text-greyishBlue lg:text-lg md:text-base text-sm sm:text-sm"
+              class="font-poppins md:font-semibold font-semibold text-mediumBlue lg:text-lg md:text-base text-base"
             >
-              Villa 26 & 27
+              Cottage 26 & 27
             </p>
             <div
               class="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 mt-3 md:mb-7 sm:mb-4 mb-4 md:mx-3 sm:mx-1 mx-1 gap-y-3"
             >
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--guest-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   5 Kamar tidur
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--kitchen-counter-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--kitchen-counter-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Dapur
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--living-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--living-room-outline] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Ruang tamu
                 </p>
               </div>
               <div class="flex gap-x-3">
                 <span
-                  class="icon-[mdi--bathroom] md:w-6 md:h-6 sm:h-3 sm:w-3 text-babyBlue"
+                  class="icon-[mdi--bathroom] md:w-6 md:h-6 sm:h-3 sm:w-3 text-vintage"
                 ></span>
                 <p
-                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-babyBlue"
+                  class="font-poppins font-normal md:text-base sm:text-sm text-sm text-mediumBlue"
                 >
                   Kamar mandi dalam
                 </p>
@@ -730,11 +709,13 @@
           >
             Penghuni
           </p>
-          <div class="py-3 px-5 shadow mb-3 rounded-md bg-whiten">
+          <div
+            class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 py-3 px-5 shadow mb-3 rounded-md bg-whiten"
+          >
             <p
-              class="font-poppins font-semibold md:text-base sm:text-sm text-sm text-greyishBlue mb-2"
+              class="font-poppins font-semibold md:text-base text-base text-mediumBlue mb-2"
             >
-              Villa 15
+              Cottage 15
             </p>
             <p
               class="font-poppins font-normal md:text-base sm:text-sm text-sm py-1 text-greyishBlue"
@@ -747,11 +728,13 @@
               Keluarga Kustiyah (Erna dan Ani)
             </p>
           </div>
-          <div class="py-4 px-5 shadow-md rounded-md mb-3 bg-whiten">
+          <div
+            class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 py-4 px-5 shadow-md rounded-md mb-3 bg-whiten"
+          >
             <p
-              class="font-poppins font-semibold md:text-base sm:text-sm text-sm mb-2 text-greyishBlue"
+              class="font-poppins font-semibold md:text-base mb-2 text-base text-mediumBlue"
             >
-              Villa 26
+              Cottage 26
             </p>
             <p
               class="font-poppins font-normal md:text-base sm:text-sm text-sm py-1 text-greyishBlue"
@@ -771,7 +754,7 @@
             <p
               class="font-poppins font-normal md:text-base sm:text-sm text-sm py-1 text-greyishBlue"
             >
-              Keluarga Kharim
+              Keluarga Khariri
             </p>
             <p
               class="font-poppins font-normal md:text-base sm:text-sm text-sm py-1 text-greyishBlue"
@@ -779,11 +762,13 @@
               Keluarga Joni
             </p>
           </div>
-          <div class="py-4 px-5 shadow-md rounded-md bg-whiten">
+          <div
+            class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 py-4 px-5 shadow-md rounded-md bg-whiten"
+          >
             <p
-              class="font-poppins font-semibold md:text-base sm:text-sm text-sm text-greyishBlue mb-2"
+              class="font-poppins font-semibold md:text-base text-base text-mediumBlue mb-2"
             >
-              Villa 27
+              Cottage 27
             </p>
             <p
               class="font-poppins font-normal md:text-base sm:text-sm text-sm py-1 text-greyishBlue"
@@ -815,7 +800,7 @@
       </div>
     </div>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010592.9692004513!2d112.14782345764026!3d-8.339631809792383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd71c607543752f%3A0xac76bd94926ed064!2sVilla%20Utama%20Raya!5e0!3m2!1sen!2sid!4v1709750097854!5m2!1sen!2sid"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010592.9692004513!2d112.14782345764026!3d-8.339631809792383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd71c607543752f%3A0xac76bd94926ed064!1sCottage%20Utama%20Raya!5e0!3m2!1sen!1sid!4v1709750097854!5m2!1sen!1sid"
       class="w-full lg:h-144 h-96 border-0 md:py-20 py-12 md:mb-16 mb-8"
       allowfullscreen=""
       loading="lazy"
@@ -842,12 +827,12 @@
         class="md:w-12 w-6 h-auto"
       />
       <h4
-        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2"
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2"
       >
         Lomba Foto
       </h4>
       <p
-        class="animate-[slideInFromBottom_1s_ease-in-out_1s] text-center font-poppins font-normal lg:text-lg md:text-base text-sm sm:text-sm py-4 md:px-8"
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_1s_ease-in-out] intersect:opacity-100 text-center font-poppins font-normal lg:text-lg md:text-base text-sm sm:text-sm py-4 md:px-8"
       >
         Di acara nanti, akan ada lomba foto yang seru! <br />
         Ayo, tunjukkan kreativitasmu dan tangkap momen indah bersama keluarga.
@@ -856,7 +841,7 @@
       <h4 class="font-croissantOne md:text-2xl text-lg py-6">Tema Foto</h4>
       <div class="grid grid-cols-2 md:gap-6 gap-4 mb-4">
         <div
-          class="bg-whiten shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
+          class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-1000 bg-whiten shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
         >
           <span class="icon-[mdi--family] md:w-10 md:h-10 w-9 h-9 mb-2"></span>
           <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
@@ -864,7 +849,7 @@
           </p>
         </div>
         <div
-          class="bg-whiten shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
+          class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-1000 bg-whiten shadow-md md:py-10 md:px-10 py-5 px-4 rounded-2xl rounded-tl-none rounded-br-none text-center"
         >
           <span class="icon-[mdi--world] md:w-10 md:h-10 w-9 h-9 mb-2"></span>
           <p class="font-poppins font-normal text-darkBlue md:text-lg text-sm">
@@ -876,14 +861,20 @@
         <h4 class="text-center font-croissantOne md:text-2xl text-lg py-6">
           Ketentuan Lomba
         </h4>
-        <p class="rounded-md bg-lightVintage shadow p-4 mb-3">
+        <p
+          class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 rounded-md bg-lightVintage shadow p-4 mb-3"
+        >
           Satu peserta hanya mengirimkan satu foto
         </p>
-        <p class="rounded-md bg-lightVintage shadow p-4 mb-3">
+        <p
+          class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 rounded-md bg-lightVintage shadow p-4 mb-3"
+        >
           Foto dikumpulkan paling lambat Hari Jumat 12 April 2024 sebelum
           sarapan
         </p>
-        <p class="rounded-md bg-lightVintage shadow p-4 mb-3">
+        <p
+          class="transition-all opacity-0 intersect:animate-[slideInFromLeft_1s_ease-in-out] intersect:opacity-100 rounded-md bg-lightVintage shadow p-4 mb-3"
+        >
           Penilaian & Pemilihan Foto Favorit berdasarkan dari hasil pooling dari
           seluruh keluarga yang hadir.
         </p>
@@ -895,13 +886,14 @@
         menangkap momen yang spesial!
       </p>
       <div
-        class="flex items-center hover:bg-greyishBlue mx-auto rounded-xl bg-mediumBlue md:py-3 md:px-12 py-3 px-6 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 shadow-lg"
+        class="animate-bounce flex items-center hover:bg-greyishBlue mx-auto rounded-xl bg-mediumBlue md:py-3 md:px-12 py-3 px-6 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 shadow-lg"
       >
         <span
           class="icon-[mdi--web] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4 text-white"
         ></span>
         <a
-          href="#"
+          href="http://bit.ly/LombaFotoJalanJalin24"
+          target="_blank"
           class="font-poppins font-normal md:text-base sm:text-sm text-sm text-white"
         >
           http://bit.ly/LombaFotoJalanJalin24
@@ -941,7 +933,7 @@
         Kangen momen-momen Halal Bihalal kita tahun lalu?
       </p>
       <iframe
-        class="rounded h-112 w-full px-6"
+        class="opacity-0 transition-all intersect:opacity-100 duration-1000 rounded h-112 w-full px-6"
         src="https://youtube.com/embed/jcSErLXRwGE?feature=shared"
         frameborder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -958,7 +950,7 @@
         >
           <img
             src="assets/images/galeri_1.jpg"
-            class="object-cover md:h-72 h-44 w-full rounded"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-44 w-full rounded"
             alt=""
           />
         </a>
@@ -970,7 +962,7 @@
         >
           <img
             src="assets/images/galeri_6.jpg"
-            class="object-cover md:h-72 h-56 w-full rounded"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-56 w-full rounded"
             alt=""
           />
         </a>
@@ -982,7 +974,7 @@
         >
           <img
             src="assets/images/galeri_3.jpg"
-            class="object-cover md:h-72 h-56 w-full rounded"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-56 w-full rounded"
             alt=""
           />
         </a>
@@ -994,7 +986,7 @@
         >
           <img
             src="assets/images/galeri_4.jpg"
-            class="object-cover md:h-72 h-48 w-full rounded"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-48 w-full rounded"
             alt=""
           />
         </a>
@@ -1006,7 +998,7 @@
         >
           <img
             src="assets/images/galeri_5.jpg"
-            class="object-cover md:h-72 h-48 w-full rounded"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-48 w-full rounded"
             alt=""
           />
         </a>
@@ -1018,7 +1010,7 @@
         >
           <img
             src="assets/images/galeri_2.jpg"
-            class="object-cover md:h-72 h-40 w-full rounded col-span-2"
+            class="scale-50 opacity-0 intersect:scale-100 intersect:opacity-100 transition duration-700 object-cover md:h-72 h-40 w-full rounded col-span-2"
             alt=""
           />
         </a>
@@ -1031,7 +1023,7 @@
       <a
         href="https://drive.google.com/drive/folders/1fxt_0JTvG1bXpcA9-gbFOgBvgbet3DwA?usp=drive_link"
         target="blank"
-        class="px-5 py-3 font-poppins text-center font-normal rounded-xl bg-mediumBlue text-white md:text-xl text-sm cursor-pointer shadow-lg"
+        class="animate-bounce px-5 py-3 font-poppins text-center font-normal rounded-xl bg-mediumBlue text-white md:text-xl text-sm cursor-pointer shadow-lg"
       >
         Halal Bihalal KB Abdullah Salam 2023
       </a>
@@ -1066,21 +1058,30 @@
       >
         <div class="shrink-0 snap-center">
           <div class="w-full">
-            <video class="rounded-xl h-112" controls>
+            <video
+              class="opacity-0 transition-all intersect:opacity-100 duration-1000 rounded-xl h-112"
+              controls
+            >
               <source src="assets/videos/video_1.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
         <div class="shrink-0 snap-center">
           <div class="w-full">
-            <video class="rounded-xl h-112" controls>
+            <video
+              class="opacity-0 transition-all intersect:opacity-100 duration-1000 rounded-xl h-112"
+              controls
+            >
               <source src="assets/videos/video_2.mp4" type="video/mp4" />
             </video>
           </div>
         </div>
         <div class="shrink-0 snap-center">
           <div class="w-full">
-            <video class="rounded-xl h-112" controls>
+            <video
+              class="opacity-0 transition-all intersect:opacity-100 duration-1000 rounded-xl h-112"
+              controls
+            >
               <source src="assets/videos/video_3.mp4" type="video/mp4" />
             </video>
           </div>
@@ -1116,7 +1117,7 @@
         class="grid md:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 max-sm:w-full max-sm:px-4"
       >
         <div
-          class="md:py-10 md:px-10 py-8 px-5 md:h-112 border-0.5 rounded-lg border-solid border-gray-300 mb-5"
+          class="transition-all opacity-0 intersect:animate-[slideInFromTop_2s_ease-in-out] intersect:opacity-100 md:py-10 md:px-10 py-8 px-5 md:h-112 border-0.5 rounded-lg border-solid border-gray-300 mb-5"
         >
           <form class="form mx-auto">
             <!-- <h4 class="font-poppins font-semibold md:text-lg text-base mb-6">
@@ -1211,7 +1212,9 @@
             </div>
           </form>
         </div>
-        <div class="border-0.5 rounded-lg border-solid border-gray-300">
+        <div
+          class="transition-all opacity-0 intersect:animate-[slideInFromBottom_2s_ease-in-out] intersect:opacity-100 border-0.5 rounded-lg border-solid border-gray-300"
+        >
           <div
             id="chats"
             class="md:py-10 md:px-10 py-5 px-5 h-112 overflow-y-scroll"
@@ -1229,11 +1232,13 @@
         class="md:w-12 w-6 h-auto"
       />
       <h4
-        class="animate-[slideInFromBottom_1s_ease-in-out_3s] font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2 md:mb-10 mb-8"
+        class="font-croissantOne lg:text-3xl md:text-xl text-2xl md:mt-4 mt-2 md:mb-10 mb-8"
       >
         Hitung Mundur
       </h4>
-      <div class="flex justify-center md:gap-20 gap-6 text-center">
+      <div
+        class="transition-all opacity-0 intersect:animate-[slideInFromBottom_2s_ease-in-out] intersect:opacity-100 flex justify-center md:gap-20 gap-6 text-center"
+      >
         <div>
           <h4
             id="days"
@@ -1302,7 +1307,7 @@
           lebih lanjut!
         </p>
         <div
-          class="flex items-center mx-auto rounded-xl bg-mediumBlue text-white md:py-3 md:px-3 py-3 px-4 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 cursor-pointer shadow-lg"
+          class="animate-bounce flex items-center mx-auto rounded-xl bg-mediumBlue text-white md:py-3 md:px-3 py-3 px-4 w-fit md:gap-x-4 sm:gap-x-2 gap-x-2 cursor-pointer shadow-lg"
         >
           <span
             class="icon-[mdi--instagram] md:w-6 md:h-6 sm:w-4 sm:h-4 w-4 h-4"
