@@ -64,7 +64,7 @@ function fetchChatData() {
         const dateString = chat.datetime;
         const date = moment(dateString);
         const formattedDate = date.format("DD MMM YYYY HH:mm");
-        chats += `<div class="font-poppins item-chat flex justify-start gap-2.5 mb-5">
+        chats += `<div class="transition-all opacity-0 intersect:animate-[slideInFromLeft_2s_ease-in-out] intersect:opacity-100 font-poppins item-chat flex justify-start gap-2.5 mb-5">
           <div
             class="flex flex-col w-full max-w-[320px] leading-1.5 p-4 bg-whiten shadow rounded-e-xl rounded-es-xl"
           >

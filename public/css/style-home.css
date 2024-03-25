@@ -2242,20 +2242,6 @@ input:checked + .toggle-bg {
   }
 }
 
-.animate-\[fadeIn_1s_ease-in-out\] {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .animate-\[fadeIn_2s_ease-in-out\] {
   animation: fadeIn 2s ease-in-out;
 }
@@ -2356,20 +2342,36 @@ input:checked + .toggle-bg {
   animation: slideInFromBottom 2s ease-in-out;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromBottom {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateY(10%);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-.animate-\[slideInFromLeft_1s_ease-in-out\] {
-  animation: slideInFromLeft 1s ease-in-out;
+.animate-\[slideInFromBottom_2s_ease-in-out_2s\] {
+  animation: slideInFromBottom 2s ease-in-out 2s;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-\[slideInFromBottom_2s_ease-in-out_3s\] {
+  animation: slideInFromBottom 2s ease-in-out 3s;
 }
 
 @keyframes slideInFromLeft {
@@ -2400,40 +2402,8 @@ input:checked + .toggle-bg {
   }
 }
 
-.animate-\[slideInFromRight_1s_ease-in-out\] {
-  animation: slideInFromRight 1s ease-in-out;
-}
-
-@keyframes slideInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .animate-\[slideInFromRight_2s_ease-in-out\] {
   animation: slideInFromRight 2s ease-in-out;
-}
-
-@keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-10%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-\[slideInFromTop_1s_ease-in-out\] {
-  animation: slideInFromTop 1s ease-in-out;
 }
 
 @keyframes slideInFromTop {
@@ -5052,22 +5022,6 @@ input:checked + .toggle-bg {
   }
 }
 
-.intersect\:animate-\[slideInFromBottom_1s_ease-in-out\]:not([no-intersect]) {
-  animation: slideInFromBottom 1s ease-in-out;
-}
-
-@keyframes slideInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(10%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .intersect\:animate-\[slideInFromBottom_2s_ease-in-out\]:not([no-intersect]) {
   animation: slideInFromBottom 2s ease-in-out;
 }
@@ -5084,24 +5038,8 @@ input:checked + .toggle-bg {
   }
 }
 
-.intersect\:animate-\[slideInFromLeft_1s_ease-in-out\]:not([no-intersect]) {
-  animation: slideInFromLeft 1s ease-in-out;
-}
-
-@keyframes slideInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-10%);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.intersect\:animate-\[slideInFromTop_1s_ease-in-out\]:not([no-intersect]) {
-  animation: slideInFromTop 1s ease-in-out;
+.intersect\:animate-\[slideInFromLeft_2s_ease-in-out\]:not([no-intersect]) {
+  animation: slideInFromLeft 2s ease-in-out;
 }
 
 @keyframes slideInFromTop {
